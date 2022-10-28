@@ -28,7 +28,7 @@
   <body>
 	<h1 class="display-1 pb-5">Stardew Valley Heart Event Tracker</h1>
 
-	<p class="lead pb-5">alex should populate with hearts???????</p>
+	<p class="lead pb-5">it should definitely work now wtf</p>
 
 	<table class="table table-hover table-responsive table-bordered">
 		<thead>
@@ -53,7 +53,7 @@
 			<td>
 					
 			</td>
-			<td id="currently-test" data-value="">
+			<td id="currently-test" data-value="0">
 				<img src="empty.png" onclick="one('test')">
 				<img src="empty.png" onclick="two('test')">
 				<img src="empty.png" onclick="three('test')">
@@ -117,7 +117,6 @@
 				<img src="empty.png" onclick="thirteen('{{name}}')">
 				<img src="empty.png" onclick="fourteen('{{name}}')">
 			</td>
-			{{set name}}
 			{{#each events}}
 			<td>{{#if details}}
 				<div class="form-check">
@@ -148,9 +147,24 @@
 			}
 		});
 
-		Handlebars.registerHelper('set', function (x) {
-			let value = $("#currently-"+name).attr("data-value");
-			let val = parseInt(value);		
+		//populate the table
+		$.getJSON('scripts/people.json',function(x){
+			console.log(x);
+
+			//populate table rows
+			let template = Handlebars.compile($("#rowTemplate").html());
+			$("tbody").append(template(x));
+		});
+
+		//populate currently
+		var rows = $("tbody tr").length;
+				
+		//for each row...
+		for(let i=0;i<rows;i++){
+			//get the currently box
+			let val = parseInt($("tbody tr:nth-child("+(i+1)+") td[id^='currently']").attr("data-value"));
+			let name = $("tbody tr:nth-child("+(i+1)+") td[id^='currently']").attr("id").replace("currently-","");
+			
 			switch(val){
 				case 1: one(name); break;
 				case 2: two(name); break;
@@ -167,16 +181,7 @@
 				case 13: thirteen(name); break;
 				case 14: fourteen(name); break;
 			}
-		});
-
-		//populate the table
-		$.getJSON('scripts/people.json',function(x){
-			console.log(x);
-
-			//populate table rows
-			let template = Handlebars.compile($("#rowTemplate").html());
-			$("tbody").append(template(x));
-		});
+		}
 	});
 	</script>
 
