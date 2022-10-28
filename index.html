@@ -62,9 +62,7 @@
 	<script>
 	$(document).ready(function(){
 		$.getJSON("people.json", function(data){
-			var temp = $("#personTemplate").html();
-			var template = Handlebars.compile(temp);
-			$("tbody").html(template(data));
+			console.log(data);
 		});
 	});
 	</script>
