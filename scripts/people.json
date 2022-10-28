@@ -6,57 +6,38 @@
 			"photo":"https://stardewcommunitywiki.com/mediawiki/images/0/04/Alex.png",
 			"events":[
 				{
+					"name":"oneHeart",
 					"details":null
 				},{
+					"name":"twoHearts",
 					"details": "On a sunny summer day, visit the beach when Alex is there."
 				},{
+					"name":"threeHearts",
 					"details":null
 				},{
+					"name":"fourHearts",
 					"details":"Enter town between 9am and 4pm."
 				},{
+					"name":"fiveHearts",
 					"details":"Enter Alex's house when he's there."
 				},{
+					"name":"sixHearts",
 					"details":"Enter Alex's house when he's there."
 				},{
+					"name":"sevenHearts",
 					"details":null
 				},{
+					"name":"eightHearts",
 					"details": "On a sunny summer day, visit the beach when Alex is there. Note: Cannot be triggered after marrying Alex, since he no longer visits the beach."
 				},{
+					"name":"nineHearts",
 					"details":null
 				},{
+					"name":"tenHearts",
 					"details": "Alex will send you a letter to meet him at the Saloon after dark. After receiving the letter, enter the Saloon between 7pm and 10pm."
 				},{
+					"name":"fourteenHearts",
 					"details": "Exit the Farmhouse in year 2+ between 5am and 8:20am on any day other than Sunday. You must have 5,000g available."
-				}
-			]
-		},
-		{
-			"name":"Elliot",
-			"canMarry": true,
-			"photo":"https://stardewcommunitywiki.com/mediawiki/images/b/bd/Elliott.png",
-			"events":[
-				{
-					"details": null
-				},{
-					"details": "Enter Elliott's cabin when he's there."
-				},{
-					"details": null
-				},{
-					"details": "Enter the Stardrop Saloon between 3pm and 10pm when Gus is there."
-				},{
-					"details": null
-				},{
-					"details": "Enter Elliot's home when he's there."
-				},{
-					"details": null
-				},{
-					"details": "After receiving a letter from Elliott, visit the museum between 1pm and 7pm. (It doesn't need to be the same day.)"
-				},{
-					"details": null
-				},{
-					"details": "Go to the beach on a day when it is not raining between 7am and 1pm. A letter will be sent to you but it is not needed to trigger the event."
-				},{
-					"details": "Exit the farm house between 5am and 3pm on a day when there are no Festivals occurring for the next 8 days."
 				}
 			]
 		}
