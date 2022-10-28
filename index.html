@@ -28,7 +28,7 @@
   <body>
 	<h1 class="display-1 pb-5">Stardew Valley Heart Event Tracker</h1>
 
-	<p class="lead pb-5">alex should populate with hearts</p>
+	<p class="lead pb-5">alex should populate with hearts???????</p>
 
 	<table class="table table-hover table-responsive table-bordered">
 		<thead>
@@ -149,8 +149,8 @@
 		});
 
 		Handlebars.registerHelper('set', function (x) {
-			let name = x + "Hearts";
-			let val = parseInt(getCookie(name));
+			let value = $("#currently-"+name).attr("data-value");
+			let val = parseInt(value);		
 			switch(val){
 				case 1: one(name); break;
 				case 2: two(name); break;
