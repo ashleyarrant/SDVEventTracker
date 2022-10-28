@@ -33,36 +33,13 @@
 	  </tbody>
 	</table>
 
-	<!-- templates -->
-		<script id="personTemplate" type="text/x-handlebars-template">
-			{{#each people}}
-			<tr>
-			  <th scope="row">{{name}}</th>
-			  <td id="currentHearts-{{name}}"></td>
-			  <td>{{events.1heart}}</td>
-			  <td>{{events.2hearts}}</td>
-			  <td>{{events.3hearts}}</td>
-			  <td>{{events.4hearts}}</td>
-			  <td>{{events.5hearts}}</td>
-			  <td>{{events.6hearts}}</td>
-			  <td>{{events.7hearts}}</td>
-			  <td>{{events.8hearts}}</td>
-			  <td>{{events.9hearts}}</td>
-			  <td>{{events.10hearts}}</td>
-			  <td>{{events.14hearts}}</td>
-			</tr>
-			{{/each}}
-		</script>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+	    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	
 	<script>
 	$(document).ready(function(){
-		$.getJSON("people.json", function(data){
-			console.log(data);
+		$.getJSON("people.json", function(x){
+			console.log(x);
 		});
 	});
 	</script>
