@@ -1,58 +1,60 @@
 {
 	"people":[
 		{
-			"name":"INSERTNAMEHERE",
+			"name":"Alex",
+			"canMarry": true,
 			"events":[
 				{
 					"details":null
 				},{
-					"details": "this is test content"
+					"details": "On a sunny summer day, visit the beach when Alex is there."
 				},{
 					"details":null
 				},{
-					"details":null
+					"details":"Enter town between 9am and 4pm."
+				},{
+					"details":"Enter Alex's house when he's there."
+				},{
+					"details":"Enter Alex's house when he's there."
 				},{
 					"details":null
 				},{
-					"details":null
+					"details": "On a sunny summer day, visit the beach when Alex is there. Note: Cannot be triggered after marrying Alex, since he no longer visits the beach."
 				},{
 					"details":null
 				},{
-					"details":null
+					"details": "Alex will send you a letter to meet him at the Saloon after dark. After receiving the letter, enter the Saloon between 7pm and 10pm."
 				},{
-					"details":null
-				},{
-					"details":null
-				},{
-					"details":null
+					"details": "Exit the Farmhouse in year 2+ between 5am and 8:20am on any day other than Sunday. You must have 5,000g available."
 				}
 			]
 		},
 		{
-			"name":"INSERTNAMEHERE",
+			"name":"Elliot",
+			"canMarry": true,
 			"events":[
 				{
-					"details":null
+					"details": null
 				},{
-					"details": "this is test content"
+					"details": "Enter Elliott's cabin when he's there."
 				},{
-					"details":null
+					"details": null
 				},{
-					"details":null
+					"details": "Enter the Stardrop Saloon between 3pm and 10pm when Gus is there."
 				},{
-					"details":null
+					"details": null
 				},{
-					"details":null
+					"details": "Enter Elliot's home when he's there."
 				},{
-					"details":null
+					"details": null
 				},{
-					"details":null
+					"details": "After receiving a letter from Elliott, visit the museum between 1pm and 7pm. (It doesn't need to be the same day.)"
 				},{
-					"details":null
+					"details": null
 				},{
-					"details":null
+					"details": "Go to the beach on a day when it is not raining between 7am and 1pm. A letter will be sent to you but it is not needed to trigger the event."
 				},{
-					"details":null
+					"details": "Exit the farm house between 5am and 3pm on a day when there are no Festivals occurring for the next 8 days."
 				}
 			]
 		}
