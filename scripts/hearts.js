@@ -1,12 +1,7 @@
-$(document).ready(function(){
+function oneheart() {
+	alert('one heart');
+}
 
-//place function listeners
-	let x = $("td[id^='currently']").length;
-	alert(x);
-
-//define functions
-	function 1heart() {
-		alert('hi');
-	}
-
-});
+function twohearts() {
+	alert("two hearts");
+}
