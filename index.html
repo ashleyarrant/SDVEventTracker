@@ -28,7 +28,7 @@
   <body>
 	<h1 class="display-1 pb-5">Stardew Valley Heart Event Tracker</h1>
 
-	<p class="lead pb-5">cookie should set the data-value for the table cell correctly</p>
+	<p class="lead pb-5">alex should populate with hearts</p>
 
 	<table class="table table-hover table-responsive table-bordered">
 		<thead>
@@ -117,6 +117,7 @@
 				<img src="empty.png" onclick="thirteen('{{name}}')">
 				<img src="empty.png" onclick="fourteen('{{name}}')">
 			</td>
+			{{set name}}
 			{{#each events}}
 			<td>{{#if details}}
 				<div class="form-check">
@@ -137,17 +138,37 @@
 	<script>
 	$(document).ready(function(){
 
-	Handlebars.registerHelper('check', function (x) {
-		let name = x + "Hearts";
-		let val = getCookie(name);
-		if(val == "no cookie"){
-			return 0;
-		} else {
-			return parseInt(val);
-		}
-	});
+		Handlebars.registerHelper('check', function (x) {
+			let name = x + "Hearts";
+			let val = getCookie(name);
+			if(val == "no cookie"){
+				return 0;
+			} else {
+				return parseInt(val);
+			}
+		});
 
-		
+		Handlebars.registerHelper('set', function (x) {
+			let name = x + "Hearts";
+			let val = parseInt(getCookie(name));
+			switch(val){
+				case 1: one(name); break;
+				case 2: two(name); break;
+				case 3: three(name); break;
+				case 4: four(name); break;
+				case 5: five(name); break;
+				case 6: six(name); break;
+				case 7: seven(name); break;
+				case 8: eight(name); break;
+				case 9: nine(name); break;
+				case 10: ten(name); break;
+				case 11: eleven(name); break;
+				case 12: twelve(name); break;
+				case 13: thirteen(name); break;
+				case 14: fourteen(name); break;
+			}
+		});
+
 		//populate the table
 		$.getJSON('scripts/people.json',function(x){
 			console.log(x);
