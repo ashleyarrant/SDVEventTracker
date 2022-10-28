@@ -28,60 +28,58 @@
   <body>
 	<h1 class="display-1 pb-5">Stardew Valley Heart Event Tracker</h1>
 
-	<p class="lead pb-5">added checkboxes to table, removed Elliott</p>
+	<p class="lead pb-5">added cookie system</p>
 
-	<div class="container-xl">
-		<table class="table table-hover table-bordered">
-		  <thead>
-			<tr>
-			  <th scope="col">Villiager</th>
-			  <th scope="col">Currently</th>
-			  <th scope="col">1 heart</th>
-			  <th scope="col">2 hearts</th>
-			  <th scope="col">3 hearts</th>
-			  <th scope="col">4 hearts</th>
-			  <th scope="col">5 hearts</th>
-			  <th scope="col">6 hearts</th>
-			  <th scope="col">7 hearts</th>
-			  <th scope="col">8 hearts</th>
-			  <th scope="col">9 hearts</th>
-			  <th scope="col">10 hearts</th>
-			  <th scope="col">14 hearts</th>
-			</tr>
-		  </thead>
-		  <tbody>
-			<tr>
-				<td>
+	<table class="table table-hover table-responsive table-bordered">
+		<thead>
+		<tr>
+			<th scope="col">Villiager</th>
+			<th scope="col">Currently</th>
+			<th scope="col">1 heart</th>
+			<th scope="col">2 hearts</th>
+			<th scope="col">3 hearts</th>
+			<th scope="col">4 hearts</th>
+			<th scope="col">5 hearts</th>
+			<th scope="col">6 hearts</th>
+			<th scope="col">7 hearts</th>
+			<th scope="col">8 hearts</th>
+			<th scope="col">9 hearts</th>
+			<th scope="col">10 hearts</th>
+			<th scope="col">14 hearts</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>
 					
-				</td>
-				<td id="currently-test" data-value="0">
-					<img src="empty.png" onclick="one('test')">
-					<img src="empty.png" onclick="two('test')">
-					<img src="empty.png" onclick="three('test')">
-					<img src="empty.png" onclick="four('test')">
-					<img src="empty.png" onclick="five('test')">
-					<img src="empty.png" onclick="six('test')">
-					<img src="empty.png" onclick="seven('test')">
-					<img src="empty.png" onclick="eight('test')">
-					<img src="empty.png" onclick="nine('test')">
-					<img src="empty.png" onclick="ten('test')">
-					<img src="empty.png" onclick="eleven('test')">
-					<img src="empty.png" onclick="twelve('test')">
-					<img src="empty.png" onclick="thirteen('test')">
-					<img src="empty.png" onclick="fourteen('test')">
-				</td>
-				<td>
-					<div class="form-check">
-					  <input class="form-check-input" type="checkbox" value="" id="oneHeart-{{name}}">
-					  <label class="form-check-label d-block" for="oneHeart-{{name}}">
-						Default checkbox ;alskdjf ;alskdj f;alskdjf ;alkdjf a;lsdkfj
-					  </label>
-					</div>
-				</td>
-			</tr>
-		  </tbody>
-		</table>
-	</div>
+			</td>
+			<td id="currently-test" data-value="{{check name}}">
+				<img src="empty.png" onclick="one('test')">
+				<img src="empty.png" onclick="two('test')">
+				<img src="empty.png" onclick="three('test')">
+				<img src="empty.png" onclick="four('test')">
+				<img src="empty.png" onclick="five('test')">
+				<img src="empty.png" onclick="six('test')">
+				<img src="empty.png" onclick="seven('test')">
+				<img src="empty.png" onclick="eight('test')">
+				<img src="empty.png" onclick="nine('test')">
+				<img src="empty.png" onclick="ten('test')">
+				<img src="empty.png" onclick="eleven('test')">
+				<img src="empty.png" onclick="twelve('test')">
+				<img src="empty.png" onclick="thirteen('test')">
+				<img src="empty.png" onclick="fourteen('test')">
+			</td>
+			<td>
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="" id="oneHeart-{{name}}">
+					<label class="form-check-label d-block" for="oneHeart-{{name}}">
+					Default checkbox ;alskdjf ;alskdj f;alskdjf ;alkdjf a;lsdkfj
+					</label>
+				</div>
+			</td>
+		</tr>
+		</tbody>
+	</table>
 
 	<script id="rowTemplate" type="text/x-handlebars-template">
 	{{#each people}}
@@ -138,10 +136,35 @@
 
 	<script>
 	$(document).ready(function(){
+
+	Handlebars.registerHelper('check', function (x) {
+		let name = x + "Hearts";
+		let val = getCookie(name);
+		switch(val) {
+			case "1": one(name); return parseInt(val); break;
+			case "2": two(name); return parseInt(val); break;
+			case "3": three(name); return parseInt(val); break;
+			case "4": four(name); return parseInt(val); break;
+			case "5": five(name); return parseInt(val); break;
+			case "6": six(name); return parseInt(val); break;
+			case "7": seven(name); return parseInt(val); break;
+			case "8": eight(name); return parseInt(val); break;
+			case "9": nine(name); return parseInt(val); break;
+			case "10": ten(name); return parseInt(val); break;
+			case "11": eleven(name); return parseInt(val); break;
+			case "12": twelve(name); return parseInt(val); break;
+			case "13": thirteen(name); return parseInt(val); break;
+			case "14": fourteen(name); return parseInt(val); break;
+			default: return 0;
+		}
+	});
+
 		
 		//populate the table
 		$.getJSON('scripts/people.json',function(x){
 			console.log(x);
+
+			//populate table rows
 			let template = Handlebars.compile($("#rowTemplate").html());
 			$("tbody").append(template(x));
 		});
@@ -150,43 +173,3 @@
 
 	</body>
 </html>
-
-
-
-
-
-
-<!--
-
-{
-			"name":"INSERTNAMEHERE",
-			"canMarry": false,
-			"events":[
-				{
-					"details": "1"
-				},{
-					"details": "2"
-				},{
-					"details": "3"
-				},{
-					"details": "4"
-				},{
-					"details": "5"
-				},{
-					"details": "6"
-				},{
-					"details": "7"
-				},{
-					"details": "8"
-				},{
-					"details": "9"
-				},{
-					"details": "10"
-				},{
-					"details": "14"
-				}
-			]
-		}
-
-
--->

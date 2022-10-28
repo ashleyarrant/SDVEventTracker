@@ -1,7 +1,36 @@
+function setCookie(cname, cvalue, exdays) {
+  const d = new Date();
+  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+  let expires = "expires="+d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+  let name = cname + "=";
+  let ca = document.cookie.split(';');
+  for(let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "no cookie";
+}
+
+function deleteCookie(cname) {
+	if(getCookie(cname) != "no cookie"){
+		document.cookie = cname + "=" + ";expires=Thu, 18 Dec 2013 12:00:00 UTC;path=/";
+	}
+}
+
 function one(name) {
 	$("#currently-"+name).find("img").attr("src","empty.png");
 	$("#currently-"+name).find("img").eq(0).attr("src","filled.png");
 	$("#currently-"+name).attr("data-value","1");
+	setCookie(name+"Hearts","1",100);
 }
 
 function two(name) {
@@ -10,6 +39,7 @@ function two(name) {
 		$("#currently-"+name).find("img").eq(i).attr("src","filled.png");
 	}
 	$("#currently-"+name).attr("data-value","2");
+	setCookie(name+"Hearts","2",100);
 }
 
 function three(name) {
@@ -18,6 +48,7 @@ function three(name) {
 		$("#currently-"+name).find("img").eq(i).attr("src","filled.png");
 	}
 	$("#currently-"+name).attr("data-value","3");
+	setCookie(name+"Hearts","3",100);
 }
 
 function four(name) {
@@ -26,6 +57,7 @@ function four(name) {
 		$("#currently-"+name).find("img").eq(i).attr("src","filled.png");
 	}
 	$("#currently-"+name).attr("data-value","4");
+	setCookie(name+"Hearts","4",100);
 }
 
 function five(name) {
@@ -34,6 +66,7 @@ function five(name) {
 		$("#currently-"+name).find("img").eq(i).attr("src","filled.png");
 	}
 	$("#currently-"+name).attr("data-value","5");
+	setCookie(name+"Hearts","5",100);
 }
 
 function six(name) {
@@ -42,6 +75,7 @@ function six(name) {
 		$("#currently-"+name).find("img").eq(i).attr("src","filled.png");
 	}
 	$("#currently-"+name).attr("data-value","6");
+	setCookie(name+"Hearts","6",100);
 }
 
 function seven(name) {
@@ -50,6 +84,7 @@ function seven(name) {
 		$("#currently-"+name).find("img").eq(i).attr("src","filled.png");
 	}
 	$("#currently-"+name).attr("data-value","7");
+	setCookie(name+"Hearts","7",100);
 }
 
 function eight(name) {
@@ -58,6 +93,7 @@ function eight(name) {
 		$("#currently-"+name).find("img").eq(i).attr("src","filled.png");
 	}
 	$("#currently-"+name).attr("data-value","8");
+	setCookie(name+"Hearts","8",100);
 }
 
 function nine(name) {
@@ -66,6 +102,7 @@ function nine(name) {
 		$("#currently-"+name).find("img").eq(i).attr("src","filled.png");
 	}
 	$("#currently-"+name).attr("data-value","9");
+	setCookie(name+"Hearts","9",100);
 }
 
 function ten(name) {
@@ -74,6 +111,7 @@ function ten(name) {
 		$("#currently-"+name).find("img").eq(i).attr("src","filled.png");
 	}
 	$("#currently-"+name).attr("data-value","10");
+	setCookie(name+"Hearts","10",100);
 }
 
 function eleven(name) {
@@ -82,6 +120,7 @@ function eleven(name) {
 		$("#currently-"+name).find("img").eq(i).attr("src","filled.png");
 	}
 	$("#currently-"+name).attr("data-value","11");
+	setCookie(name+"Hearts","11",100);
 }
 
 function twelve(name) {
@@ -90,6 +129,7 @@ function twelve(name) {
 		$("#currently-"+name).find("img").eq(i).attr("src","filled.png");
 	}
 	$("#currently-"+name).attr("data-value","12");
+	setCookie(name+"Hearts","12",100);
 }
 
 function thirteen(name) {
@@ -98,6 +138,7 @@ function thirteen(name) {
 		$("#currently-"+name).find("img").eq(i).attr("src","filled.png");
 	}
 	$("#currently-"+name).attr("data-value","13");
+	setCookie(name+"Hearts","13",100);
 }
 
 function fourteen(name) {
@@ -106,4 +147,5 @@ function fourteen(name) {
 		$("#currently-"+name).find("img").eq(i).attr("src","filled.png");
 	}
 	$("#currently-"+name).attr("data-value","14");
+	setCookie(name+"Hearts","14",100);
 }
