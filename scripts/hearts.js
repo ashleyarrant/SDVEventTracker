@@ -25,6 +25,7 @@ function deleteCookie(cname) {
 	if(getCookie(cname) != "no cookie"){
 		document.cookie = cname + "=" + ";expires=Thu, 18 Dec 2013 12:00:00 UTC;path=/";
 	}
+	console.log("cookie "+cname+" deleted");
 }
 
 function one(name) {

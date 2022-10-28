@@ -28,7 +28,7 @@
   <body>
 	<h1 class="display-1 pb-5">Stardew Valley Heart Event Tracker</h1>
 
-	<p class="lead pb-5">maybe fixed cookie system</p>
+	<p class="lead pb-5">cookie should set the data-value for the table cell correctly</p>
 
 	<table class="table table-hover table-responsive table-bordered">
 		<thead>
@@ -140,22 +140,10 @@
 	Handlebars.registerHelper('check', function (x) {
 		let name = x + "Hearts";
 		let val = getCookie(name);
-		switch(val) {
-			case "1": one(name); return parseInt(val); break;
-			case "2": two(name); return parseInt(val); break;
-			case "3": three(name); return parseInt(val); break;
-			case "4": four(name); return parseInt(val); break;
-			case "5": five(name); return parseInt(val); break;
-			case "6": six(name); return parseInt(val); break;
-			case "7": seven(name); return parseInt(val); break;
-			case "8": eight(name); return parseInt(val); break;
-			case "9": nine(name); return parseInt(val); break;
-			case "10": ten(name); return parseInt(val); break;
-			case "11": eleven(name); return parseInt(val); break;
-			case "12": twelve(name); return parseInt(val); break;
-			case "13": thirteen(name); return parseInt(val); break;
-			case "14": fourteen(name); return parseInt(val); break;
-			default: return 0;
+		if(val == "no cookie"){
+			return 0;
+		} else {
+			return parseInt(val);
 		}
 	});
 
