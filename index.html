@@ -12,32 +12,41 @@
 
 	</head>
   <body>
-    <h1 class="display-1 pb-5">Stardew Valley Heart Event Tracker</h1>
+	<h1 class="display-1 pb-5">Stardew Valley Heart Event Tracker</h1>
 
 	<p class="lead pb-5">updated formatting + added data</p>
 
-	<table class="table table-hover table-responsive table-bordered">
-	  <thead>
-		<tr>
-		  <th scope="col">Villiager</th>
-		  <th scope="col">Currently</th>
-		  <th scope="col">1 heart</th>
-		  <th scope="col">2 hearts</th>
-		  <th scope="col">3 hearts</th>
-		  <th scope="col">4 hearts</th>
-		  <th scope="col">5 hearts</th>
-		  <th scope="col">6 hearts</th>
-		  <th scope="col">7 hearts</th>
-		  <th scope="col">8 hearts</th>
-		  <th scope="col">9 hearts</th>
-		  <th scope="col">10 hearts</th>
-		  <th scope="col">14 hearts</th>
-		</tr>
-	  </thead>
-	  <tbody>
-		
-	  </tbody>
-	</table>
+	<div class="container">
+		<table class="table table-hover table-responsive table-bordered">
+		  <thead>
+			<tr>
+			  <th scope="col">Villiager</th>
+			  <th scope="col">Currently</th>
+			  <th scope="col">1 heart</th>
+			  <th scope="col">2 hearts</th>
+			  <th scope="col">3 hearts</th>
+			  <th scope="col">4 hearts</th>
+			  <th scope="col">5 hearts</th>
+			  <th scope="col">6 hearts</th>
+			  <th scope="col">7 hearts</th>
+			  <th scope="col">8 hearts</th>
+			  <th scope="col">9 hearts</th>
+			  <th scope="col">10 hearts</th>
+			  <th scope="col">14 hearts</th>
+			</tr>
+		  </thead>
+		  <tbody>
+			<tr>
+				<td>test row</td>
+				<td id="currently-test">
+					<img src="empty.png" style="cursor:pointer;" onclick="1heart()" />
+				</td>
+				<td></td>
+
+			</tr>
+		  </tbody>
+		</table>
+	</div>
 
 	<script>
 	$(document).ready(function(){
@@ -51,6 +60,8 @@
 		});
 	});
 	</script>
+
+	<script src="hearts.js"></script>
   </body>
 </html>
 
