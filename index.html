@@ -7,11 +7,14 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>SDV Heart Event Tracker</title>
 
 	</head>
   <body>
     <h1 class="display-1 pb-5">Stardew Valley Heart Event Tracker</h1>
+
+	<p class="lead pb-5">added mustache rendering for the table</p>
 
 	<table class="table">
 	  <thead>
@@ -36,10 +39,31 @@
 	  </tbody>
 	</table>
 
+	<script id="peopleTemplate">
+		{{#each people}}
+		<tr>
+			<th scope="row">{{name}}</th>
+			<td>{{#if events.1heart}}{{events.1heart}}{{#if}}</td>
+			<td>{{#if events.2hearts}}{{events.2hearts}}{{#if}}</td>
+			<td>{{#if events.3hearts}}{{events.3hearts}}{{#if}}</td>
+			<td>{{#if events.4hearts}}{{events.4hearts}}{{#if}}</td>
+			<td>{{#if events.5hearts}}{{events.5hearts}}{{#if}}</td>
+			<td>{{#if events.6hearts}}{{events.6hearts}}{{#if}}</td>
+			<td>{{#if events.7hearts}}{{events.7hearts}}{{#if}}</td>
+			<td>{{#if events.8hearts}}{{events.8hearts}}{{#if}}</td>
+			<td>{{#if events.9hearts}}{{events.9hearts}}{{#if}}</td>
+			<td>{{#if events.10hearts}}{{events.10hearts}}{{#if}}</td>
+			<td>{{#if events.14hearts}}{{events.14hearts}}{{#if}}</td>
+		</tr>
+		{{/each}}
+	</script>
+
 	<script>
 	$(document).ready(function(){
 		$.getJSON('people.json',function(x){
-			console.log(x);
+			let temp = $("#peopleTemplate").html();
+			let template = Handlebars.compile(temp);
+			$("#tbody").html(template(x));
 		});
 	});
 	</script>
