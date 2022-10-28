@@ -3,6 +3,7 @@
 		{
 			"name":"Alex",
 			"canMarry": true,
+			"photo":"https://stardewcommunitywiki.com/mediawiki/images/0/04/Alex.png",
 			"events":[
 				{
 					"details":null

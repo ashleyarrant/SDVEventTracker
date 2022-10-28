@@ -8,14 +8,27 @@
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 	<script src="scripts/hearts.js"></script>
+	<script src="scripts/handlebars.min-v4.7.7.js"></script>
 	
     <title>SDV Heart Event Tracker</title>
+
+	<style>
+	td[id^="currently"] img {
+		width:20px;
+		display:inline-block;
+		cursor:pointer;
+	}
+
+	td {
+		min-width:200px;
+	}
+	</style>
 
 	</head>
   <body>
 	<h1 class="display-1 pb-5">Stardew Valley Heart Event Tracker</h1>
 
-	<p class="lead pb-5">updated formatting + added data</p>
+	<p class="lead pb-5">trying handlebars again</p>
 
 	<div class="container">
 		<table class="table table-hover table-responsive table-bordered">
@@ -38,10 +51,24 @@
 		  </thead>
 		  <tbody>
 			<tr>
-				<td>test row</td>
-				<td id="currently-test">
-					<img src="empty.png" onclick="one(test)">
-					<img src="empty.png" onclick="two(test)">
+				<td>
+					
+				</td>
+				<td id="currently-test" data-value="0">
+					<img src="empty.png" onclick="one('test')">
+					<img src="empty.png" onclick="two('test')">
+					<img src="empty.png" onclick="three('test')">
+					<img src="empty.png" onclick="four('test')">
+					<img src="empty.png" onclick="five('test')">
+					<img src="empty.png" onclick="six('test')">
+					<img src="empty.png" onclick="seven('test')">
+					<img src="empty.png" onclick="eight('test')">
+					<img src="empty.png" onclick="nine('test')">
+					<img src="empty.png" onclick="ten('test')">
+					<img src="empty.png" onclick="eleven('test')">
+					<img src="empty.png" onclick="twelve('test')">
+					<img src="empty.png" onclick="thirteen('test')">
+					<img src="empty.png" onclick="fourteen('test')">
 				</td>
 				<td></td>
 
@@ -50,15 +77,56 @@
 		</table>
 	</div>
 
+	<script id="rowTemplate" type="text/x-handlebars-template">
+	{{#each people}}
+		<tr>
+			<td>
+				<div class="d-flex align-items-center">
+					{{#if photo}}
+					<div class="flex-shrink-0">
+					<img src="{{photo}}" alt="" height="75">
+					</div>
+					{{/if}}
+					<div class="flex-grow-1 ms-3">
+					test row
+					{{#if canMarry}}
+					<select id="relationship-test" class="form-select form-select-sm mt-3 d-inline-block" >
+						<option value="single">Single</option>
+						<option value="dating">Dating</option>
+						<option value="married">Married</option>
+					</select>
+					{{/if}}
+					</div>
+				</div>
+			</td>
+			<td id="currently-{{name}}" data-value="0">
+				<img src="empty.png" onclick="one('{{name}}')">
+				<img src="empty.png" onclick="two('{{name}}')">
+				<img src="empty.png" onclick="three('{{name}}')">
+				<img src="empty.png" onclick="four('{{name}}')">
+				<img src="empty.png" onclick="five('{{name}}')">
+				<img src="empty.png" onclick="six('{{name}}')">
+				<img src="empty.png" onclick="seven('{{name}}')">
+				<img src="empty.png" onclick="eight('{{name}}')">
+				<img src="empty.png" onclick="nine('{{name}}')">
+				<img src="empty.png" onclick="ten('{{name}}')">
+				<img src="empty.png" onclick="eleven('{{name}}')">
+				<img src="empty.png" onclick="twelve('{{name}}')">
+				<img src="empty.png" onclick="thirteen('{{name}}')">
+				<img src="empty.png" onclick="fourteen('{{name}}')">
+			</td>
+		</tr>
+	{{/each}}
+	</script>
+
 	<script>
 	$(document).ready(function(){
 		
 		//populate the table
 		$.getJSON('scripts/people.json',function(x){
 			console.log(x);
-			for(let i = 0; i<=x.people.length;i++){
-				$("tbody").append("<tr><td>"+x.people[i].name+"</td><td id='currently-"+x.people[i].name+"'></td><td>"+x.people[i].events[0].details+"</td><td>"+x.people[i].events[1].details+"</td><td>"+x.people[i].events[2].details+"</td><td>"+x.people[i].events[3].details+"</td><td>"+x.people[i].events[4].details+"</td><td>"+x.people[i].events[5].details+"</td><td>"+x.people[i].events[6].details+"</td><td>"+x.people[i].events[7].details+"</td><td>"+x.people[i].events[8].details+"</td><td>"+x.people[i].events[9].details+"</td><td>"+x.people[i].events[10].details+"</td></tr>");
-			}
+			let template = Handlebars.compile($("#rowTemplate").html());
+			$("tbody").append(template(x));
 		});
 	});
 	</script>
