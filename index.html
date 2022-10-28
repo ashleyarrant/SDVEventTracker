@@ -28,7 +28,7 @@
   <body>
 	<h1 class="display-1 pb-5">Stardew Valley Heart Event Tracker</h1>
 
-	<p class="lead pb-5">again?</p>
+	<p class="lead pb-5">again</p>
 
 	<table class="table table-hover table-responsive table-bordered">
 		<thead>
@@ -154,37 +154,37 @@
 			//populate table rows
 			let template = Handlebars.compile($("#rowTemplate").html());
 			$("tbody").append(template(x));
-		});
-
-		//populate currently
-		var rows = $("tbody tr").length;
-		console.log(rows +" rows found");
-				
-		//for each row...
-		for(let i=0;i<rows;i++){
-			//get the currently box
-			let val = parseInt($("tbody tr:nth-child("+(i+1)+") td[id^='currently']").attr("data-value"));
-			let name = $("tbody tr:nth-child("+(i+1)+") td[id^='currently']").attr("id").replace("currently-","");
-
-			console.log(name+" set to "+val);
 			
-			switch(val){
-				case 1: one(name); break;
-				case 2: two(name); break;
-				case 3: three(name); break;
-				case 4: four(name); break;
-				case 5: five(name); break;
-				case 6: six(name); break;
-				case 7: seven(name); break;
-				case 8: eight(name); break;
-				case 9: nine(name); break;
-				case 10: ten(name); break;
-				case 11: eleven(name); break;
-				case 12: twelve(name); break;
-				case 13: thirteen(name); break;
-				case 14: fourteen(name); break;
+			//populate currently
+			var rows = $("tbody tr").length;
+			console.log(rows +" rows found");
+				
+			//for each row...
+			for(let i=0;i<rows;i++){
+				//get the currently box
+				let val = parseInt($("tbody tr:nth-child("+(i+1)+") td[id^='currently']").attr("data-value"));
+				let name = $("tbody tr:nth-child("+(i+1)+") td[id^='currently']").attr("id").replace("currently-","");
+
+				console.log(name+" set to "+val);
+			
+				switch(val){
+					case 1: one(name); break;
+					case 2: two(name); break;
+					case 3: three(name); break;
+					case 4: four(name); break;
+					case 5: five(name); break;
+					case 6: six(name); break;
+					case 7: seven(name); break;
+					case 8: eight(name); break;
+					case 9: nine(name); break;
+					case 10: ten(name); break;
+					case 11: eleven(name); break;
+					case 12: twelve(name); break;
+					case 13: thirteen(name); break;
+					case 14: fourteen(name); break;
+				}
 			}
-		}
+		});
 	});
 	</script>
 
