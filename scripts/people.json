@@ -33,6 +33,7 @@
 		{
 			"name":"Elliot",
 			"canMarry": true,
+			"photo":"https://stardewcommunitywiki.com/mediawiki/images/b/bd/Elliott.png",
 			"events":[
 				{
 					"details": null

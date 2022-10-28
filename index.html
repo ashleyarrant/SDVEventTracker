@@ -28,7 +28,7 @@
   <body>
 	<h1 class="display-1 pb-5">Stardew Valley Heart Event Tracker</h1>
 
-	<p class="lead pb-5">trying handlebars again</p>
+	<p class="lead pb-5">added photos</p>
 
 	<div class="container">
 		<table class="table table-hover table-responsive table-bordered">
@@ -88,9 +88,9 @@
 					</div>
 					{{/if}}
 					<div class="flex-grow-1 ms-3">
-					test row
+					{{name}}
 					{{#if canMarry}}
-					<select id="relationship-test" class="form-select form-select-sm mt-3 d-inline-block" >
+					<select id="relationship-{{name}}" class="form-select form-select-sm d-inline-block" >
 						<option value="single">Single</option>
 						<option value="dating">Dating</option>
 						<option value="married">Married</option>
