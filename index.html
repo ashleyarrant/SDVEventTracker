@@ -46,7 +46,7 @@
 		$.getJSON('people.json',function(x){
 			console.log(x);
 			for(let i = 0; i<x.people.length;i++){
-				$("tbody").append("<tr><td>"+x.people[i].name+"</td></tr>");
+				$("tbody").append("<tr><td>"+x.people[i].name+"</td><td></td><td>"+x.people[i].events[0].details+"</td></tr>");
 			}
 		});
 	});

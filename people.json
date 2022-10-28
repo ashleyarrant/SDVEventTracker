@@ -4,27 +4,27 @@
 			"name":"INSERTNAMEHERE",
 			"events":[
 				{
-					"1heart":null
+					"details":null
 				},{
-					"2hearts": "this is test content"
+					"details": "this is test content"
 				},{
-					"3hearts":null
+					"details":null
 				},{
-					"4hearts":null
+					"details":null
 				},{
-					"5hearts":null
+					"details":null
 				},{
-					"6hearts":null
+					"details":null
 				},{
-					"7hearts":null
+					"details":null
 				},{
-					"8hearts":null
+					"details":null
 				},{
-					"9hearts":null
+					"details":null
 				},{
-					"10hearts":null
+					"details":null
 				},{
-					"14hearts":null
+					"details":null
 				}
 			]
 		},
@@ -32,27 +32,27 @@
 			"name":"INSERTNAMEHERE",
 			"events":[
 				{
-					"1heart":null
+					"details":null
 				},{
-					"2hearts": "this is test content"
+					"details": "this is test content"
 				},{
-					"3hearts":null
+					"details":null
 				},{
-					"4hearts":null
+					"details":null
 				},{
-					"5hearts":null
+					"details":null
 				},{
-					"6hearts":null
+					"details":null
 				},{
-					"7hearts":null
+					"details":null
 				},{
-					"8hearts":null
+					"details":null
 				},{
-					"9hearts":null
+					"details":null
 				},{
-					"10hearts":null
+					"details":null
 				},{
-					"14hearts":null
+					"details":null
 				}
 			]
 		}
