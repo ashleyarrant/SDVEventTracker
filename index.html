@@ -3,12 +3,70 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>SDV Heart Event Tracker</title>
   </head>
   <body>
-    <h1 class="display-2">Hello, world!</h1>
+    <h1 class="display-1 pb-5">Stardew Valley Heart Event Tracker</h1>
+
+	<table class="table">
+	  <thead>
+		<tr>
+		  <th scope="col">Villiager</th>
+		  <th scope="col">Currently</th>
+		  <th scope="col">1 heart</th>
+		  <th scope="col">2 hearts</th>
+		  <th scope="col">3 hearts</th>
+		  <th scope="col">4 hearts</th>
+		  <th scope="col">5 hearts</th>
+		  <th scope="col">6 hearts</th>
+		  <th scope="col">7 hearts</th>
+		  <th scope="col">8 hearts</th>
+		  <th scope="col">9 hearts</th>
+		  <th scope="col">10 hearts</th>
+		  <th scope="col">14 hearts</th>
+		</tr>
+	  </thead>
+	  <tbody>
+		
+	  </tbody>
+	</table>
+
+	<!-- templates -->
+		<script id="personTemplate" type="text/x-handlebars-template">
+			{{#each people}}
+			<tr>
+			  <th scope="row">{{name}}</th>
+			  <td id="currentHearts-{{name}}"></td>
+			  <td>{{events.1heart}}</td>
+			  <td>{{events.2hearts}}</td>
+			  <td>{{events.3hearts}}</td>
+			  <td>{{events.4hearts}}</td>
+			  <td>{{events.5hearts}}</td>
+			  <td>{{events.6hearts}}</td>
+			  <td>{{events.7hearts}}</td>
+			  <td>{{events.8hearts}}</td>
+			  <td>{{events.9hearts}}</td>
+			  <td>{{events.10hearts}}</td>
+			  <td>{{events.14hearts}}</td>
+			</tr>
+			{{/each}}
+		</script>
+
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	
+	<script>
+	$(document).ready(function(){
+		$.getJSON("/people.json", function(data){
+			var temp = $("#personTemplate").html();
+			var template = Handlebars.compile(temp);
+			$("tbody").html(template(data));
+		});
+	});
+	</script>
   </body>
 </html>
