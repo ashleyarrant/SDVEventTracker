@@ -118,7 +118,6 @@
 				<img src="empty.png" onclick="thirteen('{{name}}')">
 				<img src="empty.png" onclick="fourteen('{{name}}')">
 			</td>
-			{{checkforseenevents name}}
 			{{#each events}}
 			<td>{{#if details}}
 				<div class="form-check">
@@ -147,10 +146,6 @@
 			} else {
 				return parseInt(val);
 			}
-		});
-		
-		Handlebars.registerHelper('checkforseenevents', function (x) {
-			//checks to see if this person has any cookies for seen events
 		});
 		
 		Handlebars.registerHelper('checkifthiseventisseen', function (x, y) {
