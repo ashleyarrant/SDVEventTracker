@@ -6,8 +6,12 @@ function setSeenEvent(x){
 	let seen = x.checked;
 	
 	let cname = "seenEvents"+name;
-	let oldEvents = getCookie(cname);
-	let newEvents = "";
+	let newEvents = "", oldEvents = "";
+	if(getCookie(cname) == "no cookie"){
+		oldEvents = ""
+	} else {
+		oldEvents = getCookie(cname);
+	}
 	if(oldEvents.includes(event)){
 		//a change needs to be made
 		if(seen){
