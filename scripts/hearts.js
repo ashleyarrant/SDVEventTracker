@@ -3,7 +3,7 @@ function setCookie(cname, cvalue, exdays) {
   d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
   let expires = "expires="+d.toUTCString();
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-  alert("cookie "+ cname + " set to "+ cvalue);
+  console.log("cookie "+ cname + " set to "+ cvalue);
 }
 
 function getCookie(cname) {
