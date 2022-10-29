@@ -34,7 +34,5 @@ function checkSeenEvent(event, name){
 	let cname = "seenEvents" + name;
 	let data = getCookie(cname);
 
-	if(data.includes(event)){
-		return true;
-	} else return false;
+	console.log("cookie data: "+data);
 }
