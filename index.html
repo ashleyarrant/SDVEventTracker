@@ -67,7 +67,7 @@
   <body>
 	<h1 class="display-1 pb-5">Stardew Valley Heart Event Tracker</h1>
 
-	<p class="lead pb-5">i might have gotten the checkboxes to work</p>
+	<p class="lead pb-5">bachelor drop down might work?</p>
 
 	<div class="table-responsive">
 		<table class="table table-hover table-bordered">
@@ -133,7 +133,7 @@
 					<div class="flex-grow-1 ms-3">
 					{{name}}
 					{{#if canMarry}}
-					<select id="relationship-{{name}}" class="form-select form-select-sm d-inline-block" >
+					<select id="relationship-{{name}}" class="form-select form-select-sm d-inline-block" onchange="setRelationship(this)" {{markRelationshipStatus name}}>
 						<option value="single">Single</option>
 						<option value="dating">Dating</option>
 						<option value="married">Married</option>
@@ -193,6 +193,10 @@
 			let name = y;
 			
 			return loadSeen(eventName, name);
+		});
+
+		Handlebars.registerHelper('markRelationshipStatus', function (x) {
+			loadRelationship(x);
 		});
 
 		//populate the table
