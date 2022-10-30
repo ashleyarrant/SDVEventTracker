@@ -11,9 +11,11 @@ function setSeenEvent(x){
 	if(x.checked){
 		let newCookie = cookie + eventName;
 		setCookie(cname,newCookie,100);
+		$("label[for='"+$(x).attr("id")+"']").addClass("selected");
 	} else {
 		let newCookie = cookie.replace(eventName,"");
 		setCookie(cname,newCookie,100);
+		$("label[for='"+$(x).attr("id")+"']").removeClass("selected");
 	}
 }
 
@@ -25,6 +27,10 @@ function loadSeen(eventName, name){
 
 	//if cookie contains event name, check it off
 	if(cookie.includes(eventName)){
+		$("label[for='"+checkbox+"']").addClass("selected");
 		return "checked";
-	} else return "";
+	} else {
+		$("label[for='"+checkbox+"']").removeClass("selected");
+		return "";
+	}
 }

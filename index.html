@@ -23,6 +23,12 @@
 	td {
 		min-width:200px;
 	}
+
+	.selected {
+		color:grey;
+		text-decoration:line-through;
+	}
+
 	</style>
 
 	<script>
@@ -31,7 +37,7 @@
 	  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
 	  let expires = "expires="+d.toUTCString();
 	  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-	  alert("cookie "+ cname + " set to "+ cvalue);
+	  console.log("cookie "+ cname + " set to "+ cvalue);
 	}
 
 	function getCookie(cname) {
@@ -63,56 +69,58 @@
 
 	<p class="lead pb-5">i might have gotten the checkboxes to work</p>
 
-	<table class="table table-hover table-responsive table-bordered">
-		<thead>
-		<tr>
-			<th scope="col">Villiager</th>
-			<th scope="col">Currently</th>
-			<th scope="col">1 heart</th>
-			<th scope="col">2 hearts</th>
-			<th scope="col">3 hearts</th>
-			<th scope="col">4 hearts</th>
-			<th scope="col">5 hearts</th>
-			<th scope="col">6 hearts</th>
-			<th scope="col">7 hearts</th>
-			<th scope="col">8 hearts</th>
-			<th scope="col">9 hearts</th>
-			<th scope="col">10 hearts</th>
-			<th scope="col">14 hearts</th>
-		</tr>
-		</thead>
-		<tbody>
-		<tr>
-			<td>
+	<div class="table-responsive">
+		<table class="table table-hover table-bordered">
+			<thead>
+			<tr>
+				<th scope="col">Villiager</th>
+				<th scope="col">Currently</th>
+				<th scope="col">1 heart</th>
+				<th scope="col">2 hearts</th>
+				<th scope="col">3 hearts</th>
+				<th scope="col">4 hearts</th>
+				<th scope="col">5 hearts</th>
+				<th scope="col">6 hearts</th>
+				<th scope="col">7 hearts</th>
+				<th scope="col">8 hearts</th>
+				<th scope="col">9 hearts</th>
+				<th scope="col">10 hearts</th>
+				<th scope="col">14 hearts</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>
 					
-			</td>
-			<td id="currently-test" data-value="8">
-				<img src="empty.png" onclick="one('test')">
-				<img src="empty.png" onclick="two('test')">
-				<img src="empty.png" onclick="three('test')">
-				<img src="empty.png" onclick="four('test')">
-				<img src="empty.png" onclick="five('test')">
-				<img src="empty.png" onclick="six('test')">
-				<img src="empty.png" onclick="seven('test')">
-				<img src="empty.png" onclick="eight('test')">
-				<img src="empty.png" onclick="nine('test')">
-				<img src="empty.png" onclick="ten('test')">
-				<img src="empty.png" onclick="eleven('test')">
-				<img src="empty.png" onclick="twelve('test')">
-				<img src="empty.png" onclick="thirteen('test')">
-				<img src="empty.png" onclick="fourteen('test')">
-			</td>
-			<td>
-				<div class="form-check">
-					<input class="form-check-input" type="checkbox" value="" id="oneHeart-test" onclick="setSeenEvent(this)">
-					<label class="form-check-label d-block" for="oneHeart-test">
-					Default checkbox ;alskdjf ;alskdj f;alskdjf ;alkdjf a;lsdkfj
-					</label>
-				</div>
-			</td>
-		</tr>
-		</tbody>
-	</table>
+				</td>
+				<td id="currently-test" data-value="8">
+					<img src="empty.png" onclick="one('test')">
+					<img src="empty.png" onclick="two('test')">
+					<img src="empty.png" onclick="three('test')">
+					<img src="empty.png" onclick="four('test')">
+					<img src="empty.png" onclick="five('test')">
+					<img src="empty.png" onclick="six('test')">
+					<img src="empty.png" onclick="seven('test')">
+					<img src="empty.png" onclick="eight('test')">
+					<img src="empty.png" onclick="nine('test')">
+					<img src="empty.png" onclick="ten('test')">
+					<img src="empty.png" onclick="eleven('test')">
+					<img src="empty.png" onclick="twelve('test')">
+					<img src="empty.png" onclick="thirteen('test')">
+					<img src="empty.png" onclick="fourteen('test')">
+				</td>
+				<td>
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" value="" id="oneHeart-test" onclick="setSeenEvent(this)">
+						<label class="form-check-label d-block" for="oneHeart-test">
+						Default checkbox ;alskdjf ;alskdj f;alskdjf ;alkdjf a;lsdkfj
+						</label>
+					</div>
+				</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
 
 	<script id="rowTemplate" type="text/x-handlebars-template">
 	{{#each people}}
