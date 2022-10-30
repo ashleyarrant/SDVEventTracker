@@ -1,38 +1,30 @@
+//onclick event
 function setSeenEvent(x){
-	//onclick event
-
-	let event = $(x).attr("id").split("-")[0];
+	let eventName = $(x).attr("id").split("-")[0];
 	let name = $(x).attr("id").split("-")[1];
-	let seen = x.checked;
-	
-	let cname = "seenEvents"+name;
-	let newEvents = "", oldEvents = "";
-	if(getCookie(cname) == "no cookie"){
-		oldEvents = ""
+	let cname = name+"SeenEvents";
+
+	//get current cookie
+	let cookie = getCookie(cname);
+
+	//if box is checked, add event name to cookie, else remove from cookie
+	if(x.checked){
+		let newCookie = cookie + eventName;
+		setCookie(cname,newCookie,100);
 	} else {
-		oldEvents = getCookie(cname);
+		let newCookie = cookie.replace(eventName,"");
+		setCookie(cname,newCookie,100);
 	}
-	if(oldEvents.includes(event)){
-		//a change needs to be made
-		if(seen){
-			//old data is false
-			newEvents = oldEvents.replace(event + "false",event+"true");
-		} else {
-			//old data is true
-			newEvents = oldEvents.replace(event + "true",event+"false");
-		}
-	}else {
-		//register a new change
-		newEvents = oldEvents + event + seen;
-	}
-
-	setCookie(cname, newEvents, 100);
-
 }
 
-function checkSeenEvent(event, name){
-	let cname = "seenEvents" + name;
-	let data = getCookie(cname);
+//onload event
+function loadSeen(eventName, name){
+	let cname = name+"SeenEvents";
+	let cookie = getCookie(cname);
+	let checkbox = eventName + "-" + name;
 
-	return data.includes(event+"true");
+	//if cookie contains event name, check it off
+	if(cookie.includes(eventName)){
+		return "checked";
+	} else return "";
 }
