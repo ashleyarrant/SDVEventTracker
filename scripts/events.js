@@ -38,7 +38,7 @@ function loadSeen(eventName, name){
 // onclick event when the dropdown is changed
 function setRelationship(x) {
 	let name = $(x).attr("id").replace("relationship-","");
-	let status = x.value;
+	let status = $(x).val();
 	let cookie = "", newCookie = "";
 	
 	if(status = "single") {
