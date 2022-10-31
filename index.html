@@ -14,6 +14,10 @@
     <title>SDV Heart Event Tracker</title>
 
 	<style>
+	body {
+		font-family:monospace;
+	}
+
 	td[id^="currently"] img {
 		width:20px;
 		display:inline-block;
@@ -25,8 +29,13 @@
 	}
 
 	.selected {
-		color:grey;
-		text-decoration:line-through;
+		color:grey!important;
+		text-decoration:line-through!important;
+	}
+
+	[id^="relationship"] {
+		font-size:0.9em;
+		font-style:italic;
 	}
 
 	</style>
@@ -91,7 +100,8 @@
 			<tbody>
 			<tr>
 				<td>
-					
+					fuck ass shit bitch
+					<div id="relationship-test">(single)</div>
 				</td>
 				<td id="currently-test" data-value="8">
 					<img src="empty.png" onclick="one('test')">
@@ -109,7 +119,7 @@
 					<img src="empty.png" onclick="thirteen('test')">
 					<img src="empty.png" onclick="fourteen('test')">
 				</td>
-				<td>
+				<td id="box-oneHeart-test">
 					<div class="form-check">
 						<input class="form-check-input" type="checkbox" value="" id="oneHeart-test" onclick="setSeenEvent(this)">
 						<label class="form-check-label d-block" for="oneHeart-test">
@@ -133,11 +143,7 @@
 					<div class="flex-grow-1 ms-3">
 					{{name}}
 					{{#if canMarry}}
-					<select id="relationship-{{name}}" class="form-select form-select-sm d-inline-block" onchange="setRelationship(this)" {{markRelationshipStatus name}}>
-						<option value="single">Single</option>
-						<option value="dating">Dating</option>
-						<option value="married">Married</option>
-					</select>
+					<div id="relationship-{{name}}">({{relationship name}})</div>
 					{{/if}}
 					</div>
 				</div>
@@ -159,9 +165,9 @@
 				<img src="empty.png" onclick="fourteen('{{name}}')">
 			</td>
 			{{#each events}}
-			<td>{{#if details}}
+			<td id="box-{{name}}-{{../name}}">{{#if details}}
 				<div class="form-check">
-					<input class="form-check-input" type="checkbox" value="" id="{{name}}-{{../name}}" onclick="setSeenEvent(this)"  {{markSeen name ../name}}>
+					<input class="form-check-input" type="checkbox" value="" id="{{name}}-{{../name}}" {{markSeen name ../name}}>
 					<label class="form-check-label d-block" for="{{name}}-{{../name}}">
 					{{details}}
 					</label>
@@ -195,8 +201,8 @@
 			return loadSeen(eventName, name);
 		});
 
-		Handlebars.registerHelper('markRelationshipStatus', function (x) {
-			loadRelationship(x);
+		Handlebars.registerHelper('relationship', function(x) {
+			return relationship(name);
 		});
 
 		//populate the table
