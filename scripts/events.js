@@ -11,12 +11,12 @@ function setSeenEvent(x){
 	if(x.checked){
 		let newCookie = cookie + eventName;
 		setCookie(cname,newCookie,100);
-		$("label[for='"+$(x).attr("id")+"']").addClass("selected");
+		$("label[for='"+eventName+"-"+name+"']").addClass("selected");
 		$("#box-"+eventName+"-"+name).removeClass("bg-warning");
 	} else {
 		let newCookie = cookie.replace(eventName,"");
 		setCookie(cname,newCookie,100);
-		$("label[for='"+$(x).attr("id")+"']").removeClass("selected");
+		$("label[for='"+eventName+"-"+name+"']").removeClass("selected");
 		$("#box-"+eventName+"-"+name).addClass("bg-warning");
 	}
 }
