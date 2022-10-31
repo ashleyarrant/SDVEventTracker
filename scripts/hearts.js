@@ -8,7 +8,7 @@ function one(name) {
 		r.text("(single)");
 	}
 	if($("#oneHeart-"+name).prop("checked") == false){
-		$("#box-oneHeart-"+name).addClass("bg-warning");
+		$("#box-oneHeart-"+name).addClass("bg-warning");$("[id^=box]").removeClass("bg-warning");
 	}
 }
 
@@ -24,7 +24,7 @@ function two(name) {
 		r.text("(single)");
 	}
 	if($("#twoHearts-"+name).prop("checked") == false){
-		$("#box-twoHearts-"+name).addClass("bg-warning");
+		$("#box-twoHearts-"+name).addClass("bg-warning");$("[id^=box]").removeClass("bg-warning");
 	}
 }
 
@@ -40,7 +40,7 @@ function three(name) {
 		r.text("(single)");
 	}
 	if($("#threeHearts-"+name).prop("checked") == false){
-		$("#box-threeHearts-"+name).addClass("bg-warning");
+		$("#box-threeHearts-"+name).addClass("bg-warning");$("[id^=box]").removeClass("bg-warning");
 	}
 }
 
@@ -56,7 +56,7 @@ function four(name) {
 		r.text("(single)");
 	}
 	if($("#fourHearts-"+name).prop("checked") == false){
-		$("#box-fourHearts-"+name).addClass("bg-warning");
+		$("#box-fourHearts-"+name).addClass("bg-warning");$("[id^=box]").removeClass("bg-warning");
 	}
 }
 
@@ -72,7 +72,7 @@ function five(name) {
 		r.text("(single)");
 	}
 	if($("#fiveHearts-"+name).prop("checked") == false){
-		$("#box-fiveHearts-"+name).addClass("bg-warning");
+		$("#box-fiveHearts-"+name).addClass("bg-warning");$("[id^=box]").removeClass("bg-warning");
 	}
 }
 
@@ -88,7 +88,7 @@ function six(name) {
 		r.text("(single)");
 	}
 	if($("#sixHearts-"+name).prop("checked") == false){
-		$("#box-sixHearts-"+name).addClass("bg-warning");
+		$("#box-sixHearts-"+name).addClass("bg-warning");$("[id^=box]").removeClass("bg-warning");
 	}
 }
 
@@ -104,7 +104,7 @@ function seven(name) {
 		r.text("(single)");
 	}
 	if($("#sevenHearts-"+name).prop("checked") == false){
-		$("#box-sevenHearts-"+name).addClass("bg-warning");
+		$("#box-sevenHearts-"+name).addClass("bg-warning");$("[id^=box]").removeClass("bg-warning");
 	}
 }
 
@@ -120,7 +120,7 @@ function eight(name) {
 		r.text("(dating)");
 	}
 	if($("#eightHearts-"+name).prop("checked") == false){
-		$("#box-eightHearts-"+name).addClass("bg-warning");
+		$("#box-eightHearts-"+name).addClass("bg-warning");$("[id^=box]").removeClass("bg-warning");
 	}
 }
 
@@ -136,7 +136,7 @@ function nine(name) {
 		r.text("(dating)");
 	}
 	if($("#nineHearts-"+name).prop("checked") == false){
-		$("#box-nineHearts-"+name).addClass("bg-warning");
+		$("#box-nineHearts-"+name).addClass("bg-warning");$("[id^=box]").removeClass("bg-warning");
 	}
 }
 
@@ -152,7 +152,7 @@ function ten(name) {
 		r.text("(dating)");
 	}
 	if($("#tenHearts-"+name).prop("checked") == false){
-		$("#box-tenHearts-"+name).addClass("bg-warning");
+		$("#box-tenHearts-"+name).addClass("bg-warning");$("[id^=box]").removeClass("bg-warning");
 	}
 }
 
@@ -168,7 +168,7 @@ function eleven(name) {
 		r.text("(spouse)");
 	}
 	if($("#elevenHearts-"+name).prop("checked") == false){
-		$("#box-elevenHearts-"+name).addClass("bg-warning");
+		$("#box-elevenHearts-"+name).addClass("bg-warning");$("[id^=box]").removeClass("bg-warning");
 	}
 }
 
@@ -184,7 +184,7 @@ function twelve(name) {
 		r.text("(spouse)");
 	}
 	if($("#twelveHearts-"+name).prop("checked") == false){
-		$("#box-twelveHearts-"+name).addClass("bg-warning");
+		$("#box-twelveHearts-"+name).addClass("bg-warning");$("[id^=box]").removeClass("bg-warning");
 	}
 }
 
@@ -200,7 +200,7 @@ function thirteen(name) {
 		r.text("(spouse)");
 	}
 	if($("#thirteenHearts-"+name).prop("checked") == false){
-		$("#box-thirteenHearts-"+name).addClass("bg-warning");
+		$("#box-thirteenHearts-"+name).addClass("bg-warning");$("[id^=box]").removeClass("bg-warning");
 	}
 }
 
@@ -216,6 +216,6 @@ function fourteen(name) {
 		r.text("(spouse)");
 	}
 	if($("#fourteenHearts-"+name).prop("checked") == false){
-		$("#box-fourteenHearts-"+name).addClass("bg-warning");
+		$("#box-fourteenHearts-"+name).addClass("bg-warning");$("[id^=box]").removeClass("bg-warning");
 	}
 }
