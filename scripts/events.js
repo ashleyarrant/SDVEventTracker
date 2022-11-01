@@ -69,10 +69,8 @@ function colorCode(name) {
 		//get numerical value of the event
 		let values = $(this).attr("id").split("-");
 		let events = ["oneHeart","twoHearts","threeHearts","fourHearts","fiveHearts","sixHearts","sevenHearts","eightHearts","nineHearts","tenHearts","elevenHearts","twelveHearts","thirteenHearts","fourteenHearts"];
-		let eventNum = events.indexOf(values[0]);
+		let eventNum = events.indexOf(values[0]) + 1;
 		let hearts = parseInt($("#currently-"+name).attr("data-value"));
-
-		alert("event: "+eventNum+"/ hearts: "+hearts);
 
 		if(eventNum <= hearts && $(this).prop('checked') == false){
 			$("#box-" + $(this).attr("id")).addClass("bg-warning");
