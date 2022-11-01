@@ -71,7 +71,7 @@
   <body>
 	<h1 class="display-1 pb-5">Stardew Valley Heart Event Tracker</h1>
 
-	<p class="lead pb-5">trying the color code one more time -- changed the MarkSeen formula</p>
+	<p class="lead pb-5">trying the color code one more time -- changed the MarkSeen formula to actually work</p>
 
 	<button class="btn btn-danger mb-1" onclick="clearData()">delete data</button>
 
@@ -193,23 +193,26 @@
 		});
 
 		Handlebars.registerHelper('markSeen', function (eventName, name) {
-			let events = ["oneHeart","twoHearts","threeHearts","fourHearts","fiveHearts","sixHearts","sevenHearts","eightHearts","nineHearts","tenHearts","elevenHearts","twelveHearts","thirteenHearts","fourteenHearts"];
-			let eventNum = events.indexOf(eventName) + 1;
-			switch(eventNum) {
-				case 1: one(name); break;
-				case 2: two(name); break;
-				case 3: three(name); break;
-				case 4: four(name); break;
-				case 5: five(name); break;
-				case 6: six(name); break;
-				case 7: seven(name); break;
-				case 8: eight(name); break;
-				case 9: nine(name); break;
-				case 10: ten(name); break;
-				case 11: eleven(name); break;
-				case 12: twelve(name); break;
-				case 13: thirteen(name); break;
-				case 14: fourteen(name); break;
+			let cookie = getCookie(name+"SeenEvents");
+			if(cookie.includes(eventName)) {
+				let events = ["oneHeart","twoHearts","threeHearts","fourHearts","fiveHearts","sixHearts","sevenHearts","eightHearts","nineHearts","tenHearts","elevenHearts","twelveHearts","thirteenHearts","fourteenHearts"];
+				let eventNum = events.indexOf(eventName) + 1;
+				switch(eventNum) {
+					case 1: one(name); break;
+					case 2: two(name); break;
+					case 3: three(name); break;
+					case 4: four(name); break;
+					case 5: five(name); break;
+					case 6: six(name); break;
+					case 7: seven(name); break;
+					case 8: eight(name); break;
+					case 9: nine(name); break;
+					case 10: ten(name); break;
+					case 11: eleven(name); break;
+					case 12: twelve(name); break;
+					case 13: thirteen(name); break;
+					case 14: fourteen(name); break;
+				}
 			}
 		});
 
