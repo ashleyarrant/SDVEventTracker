@@ -11,9 +11,11 @@ function setSeenEvent(x){
 	//if box is checked, add event name to cookie, else remove from cookie
 	if(x.checked){
 		let newCookie = cookie + eventName;
+		$("#box-" + id).removeClass("bg-warning");
 		setCookie(cname,newCookie,100);
 	} else {
 		let newCookie = cookie.replace(eventName,"");
+		$("#box-" + id).removeClass("bg-warning");
 		setCookie(cname,newCookie,100);
 	}
 }
@@ -70,6 +72,8 @@ function colorCode(name) {
 
 		if(eventNum <= hearts && $(this).prop('checked') == false){
 			$("#box-" + $(this).attr("id")).addClass("bg-warning");
+		} else {
+			$("#box-" + $(this).attr("id")).removeClass("bg-warning");
 		}
 	});
 }
