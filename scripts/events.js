@@ -56,12 +56,12 @@ function clearData(){
 	}
 }
 
-function colorCode() {
+function colorCode(name) {
 	//for each box, if the value of the box is less than or equal to the current heart level, and the box is unchecked, make it yellow.
-	let x = $("input[type=checkbox]").length;
-	alert(x + " box counted");
+	let x = $("input[id$="+name+"]").length;
+	alert(x + " box counted for"+name);
 
-	$("input[type=checkbox]").each(function(){
+	$("input[id$="+name+"]").each(function(){
 		alert($(this).val());
 	});
 }

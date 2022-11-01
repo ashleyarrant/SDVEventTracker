@@ -7,6 +7,7 @@ function one(name) {
 	if(r.length!=0){
 		r.text("(single)");
 	}
+	colorCode(name);
 }
 
 function two(name) {
@@ -20,6 +21,7 @@ function two(name) {
 	if(r.length!=0){
 		r.text("(single)");
 	}
+	colorCode(name);
 }
 
 function three(name) {
@@ -33,6 +35,7 @@ function three(name) {
 	if(r.length!=0){
 		r.text("(single)");
 	}
+	colorCode(name);
 }
 
 function four(name) {
@@ -46,6 +49,7 @@ function four(name) {
 	if(r.length!=0){
 		r.text("(single)");
 	}
+	colorCode(name);
 }
 
 function five(name) {
@@ -59,6 +63,7 @@ function five(name) {
 	if(r.length!=0){
 		r.text("(single)");
 	}
+	colorCode(name);
 }
 
 function six(name) {
@@ -72,6 +77,7 @@ function six(name) {
 	if(r.length!=0){
 		r.text("(single)");
 	}
+	colorCode(name);
 }
 
 function seven(name) {
@@ -85,6 +91,7 @@ function seven(name) {
 	if(r.length!=0){
 		r.text("(single)");
 	}
+	colorCode(name);
 }
 
 function eight(name) {
@@ -98,6 +105,7 @@ function eight(name) {
 	if(r.length!=0){
 		r.text("(dating)");
 	}
+	colorCode(name);
 }
 
 function nine(name) {
@@ -111,6 +119,7 @@ function nine(name) {
 	if(r.length!=0){
 		r.text("(dating)");
 	}
+	colorCode(name);
 }
 
 function ten(name) {
@@ -124,6 +133,7 @@ function ten(name) {
 	if(r.length!=0){
 		r.text("(dating)");
 	}
+	colorCode(name);
 }
 
 function eleven(name) {
@@ -137,6 +147,7 @@ function eleven(name) {
 	if(r.length!=0){
 		r.text("(spouse)");
 	}
+	colorCode(name);
 }
 
 function twelve(name) {
@@ -150,6 +161,7 @@ function twelve(name) {
 	if(r.length!=0){
 		r.text("(spouse)");
 	}
+	colorCode(name);
 }
 
 function thirteen(name) {
@@ -163,6 +175,7 @@ function thirteen(name) {
 	if(r.length!=0){
 		r.text("(spouse)");
 	}
+	colorCode(name);
 }
 
 function fourteen(name) {
@@ -176,4 +189,5 @@ function fourteen(name) {
 	if(r.length!=0){
 		r.text("(spouse)");
 	}
+	colorCode(name);
 }
