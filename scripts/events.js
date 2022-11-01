@@ -72,6 +72,8 @@ function colorCode(name) {
 		let eventNum = events.indexOf(values[0]);
 		let hearts = parseInt($("#currently-"+name).attr("data-value"));
 
+		alert("event: "+eventNum+"/ hearts: "+hearts);
+
 		if(eventNum <= hearts && $(this).prop('checked') == false){
 			$("#box-" + $(this).attr("id")).addClass("bg-warning");
 		} else {
