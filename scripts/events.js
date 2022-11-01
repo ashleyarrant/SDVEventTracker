@@ -11,12 +11,12 @@ function setSeenEvent(x){
 	//if box is checked, add event name to cookie, else remove from cookie
 	if(x.checked){
 		let newCookie = cookie + eventName;
-		$("#box-" + id).removeClass("bg-warning");
 		setCookie(cname,newCookie,100);
+		$("#box-" + id).removeClass("bg-warning");
 	} else {
 		let newCookie = cookie.replace(eventName,"");
-		$("#box-" + id).removeClass("bg-warning");
 		setCookie(cname,newCookie,100);
+		$("#box-" + id).removeClass("bg-warning");
 	}
 }
 
@@ -28,8 +28,10 @@ function loadSeen(eventName, name){
 
 	//if cookie contains event name, check it off
 	if(cookie.includes(eventName)){
+		$("#box-" + checkbox).removeClass("bg-warning");
 		return "checked";
 	} else {
+		$("#box-" + checkbox).addClass("bg-warning");
 		return "";
 	}
 }
