@@ -71,7 +71,7 @@
   <body>
 	<h1 class="display-1 pb-5">Stardew Valley Heart Event Tracker</h1>
 
-	<p class="lead pb-5">somehow the checkboxes broke????</p>
+	<p class="lead pb-5">alerts should show value of heart event boxes for Alex</p>
 
 	<button class="btn btn-danger mb-1" onclick="clearData()">delete data</button>
 
@@ -118,7 +118,7 @@
 				</td>
 				<td id="box-oneHeart-test">
 					<div class="form-check">
-						<input class="form-check-input" type="checkbox" value="" id="oneHeart-test" onclick="setSeenEvent(this)">
+						<input class="form-check-input" type="checkbox" value="1" id="oneHeart-test" onclick="setSeenEvent(this)">
 						<label class="form-check-label d-block" for="oneHeart-test">
 						Default checkbox ;alskdjf ;alskdj f;alskdjf ;alkdjf a;lsdkfj
 						</label>
@@ -164,7 +164,7 @@
 			{{#each events}}
 			<td id="box-{{name}}-{{../name}}">{{#if details}}
 				<div class="form-check">
-					<input class="form-check-input" type="checkbox" value="" id="{{name}}-{{../name}}" {{markSeen name ../name}}>
+					<input class="form-check-input" type="checkbox" value="{{eventValue name}}" id="{{name}}-{{../name}}" onclick="setSeenEvent(this)" {{markSeen name ../name}}>
 					<label class="form-check-label d-block" for="{{name}}-{{../name}}">
 					{{details}}
 					</label>
@@ -195,6 +195,12 @@
 			return loadSeen(x, y);
 		});
 
+		Handlebars.registerHelper('eventValue', function (x) {
+			let events = ["oneHeart","twoHearts","threeHearts","fourHearts","fiveHearts","sixHearts","sevenHearts","eightHearts","nineHearts","tenHearts","elevenHearts","twelveHearts","thirteenHearts","fourteenHearts"];
+			let num = events.indexOf(x) + 1;
+			return num;
+		});
+
 		Handlebars.registerHelper('relationship', function(x) {
 			return relationship(name);
 		});
@@ -209,7 +215,6 @@
 			
 			//populate currently
 			var rows = $("tbody tr").length;
-			console.log(rows +" rows found");
 
 			//for each row
 			for(let i=0;i<rows;i++){
@@ -233,8 +238,6 @@
 					case 13: thirteen(name); break;
 					case 14: fourteen(name); break;
 				}
-
-				colorCode(name);
 
 			}
 		});

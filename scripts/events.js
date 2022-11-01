@@ -12,11 +12,9 @@ function setSeenEvent(x){
 	if(x.checked){
 		let newCookie = cookie + eventName;
 		setCookie(cname,newCookie,100);
-		$("#box-"+id).removeClass("bg-warning");
 	} else {
 		let newCookie = cookie.replace(eventName,"");
 		setCookie(cname,newCookie,100);
-		$("#box-"+id).addClass("bg-warning");
 	}
 }
 
@@ -60,6 +58,8 @@ function clearData(){
 
 function colorCode(name) {
 	//for each box, if the value of the box is less than or equal to the current heart level, and the box is unchecked, make it yellow.
-	let events = ["oneHeart","twoHearts","threeHearts","fourHearts","fiveHearts","sixHearts","sevenHearts","eightHearts","nineHearts","tenHearts","elevenHearts","twelveHearts","thirteenHearts","fourteenHearts"];
+	$("input[id~"+name+"]").each(function(){
+		alert(this.value);
+	});
 
 }
