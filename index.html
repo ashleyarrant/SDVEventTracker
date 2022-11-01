@@ -71,7 +71,7 @@
   <body>
 	<h1 class="display-1 pb-5">Stardew Valley Heart Event Tracker</h1>
 
-	<p class="lead pb-5">lord please</p>
+	<p class="lead pb-5">somehow the checkboxes broke????</p>
 
 	<button class="btn btn-danger mb-1" onclick="clearData()">delete data</button>
 
@@ -181,8 +181,6 @@
 	<script>
 	$(document).ready(function(){
 
-		colorCode();
-
 		Handlebars.registerHelper('checkHearts', function (x) {
 			let name = x + "Hearts";
 			let val = getCookie(name);
@@ -193,8 +191,8 @@
 			}
 		});
 
-		Handlebars.registerHelper('markSeen', function (eventName, name) {
-			return loadSeen(eventName, name);
+		Handlebars.registerHelper('markSeen', function (x, y) {
+			return loadSeen(x, y);
 		});
 
 		Handlebars.registerHelper('relationship', function(x) {
@@ -218,8 +216,6 @@
 				//populate currently
 				let val = parseInt($("tbody tr:nth-child("+(i+1)+") td[id^='currently']").attr("data-value"));
 				let name = $("tbody tr:nth-child("+(i+1)+") td[id^='currently']").attr("id").replace("currently-","");
-
-				console.log(name+" set to "+val);
 				
 				switch(val){
 					case 1: one(name); break;
@@ -238,7 +234,7 @@
 					case 14: fourteen(name); break;
 				}
 
-				//populate seen events
+				colorCode(name);
 
 			}
 		});

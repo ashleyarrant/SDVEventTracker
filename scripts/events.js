@@ -58,6 +58,8 @@ function clearData(){
 	}
 }
 
-function colorCode() {
-	alert("this is the function that will color code");
+function colorCode(name) {
+	//for each box, if the value of the box is less than or equal to the current heart level, and the box is unchecked, make it yellow.
+	let events = ["oneHeart","twoHearts","threeHearts","fourHearts","fiveHearts","sixHearts","sevenHearts","eightHearts","nineHearts","tenHearts","elevenHearts","twelveHearts","thirteenHearts","fourteenHearts"];
+
 }
