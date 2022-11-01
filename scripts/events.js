@@ -16,7 +16,7 @@ function setSeenEvent(x){
 	} else {
 		let newCookie = cookie.replace(eventName,"");
 		setCookie(cname,newCookie,100);
-		$("#box-" + id).removeClass("bg-warning");
+		$("#box-" + id).addClass("bg-warning");
 	}
 }
 
@@ -31,6 +31,7 @@ function loadSeen(eventName, name){
 		$("#box-" + checkbox).removeClass("bg-warning");
 		return "checked";
 	} else {
+		console.log("NO");
 		$("#box-" + checkbox).addClass("bg-warning");
 		return "";
 	}
