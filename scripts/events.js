@@ -1,8 +1,11 @@
 //onclick event
 function setSeenEvent(x){
+	let id = $(x).attr("id");
 	let eventName = $(x).attr("id").split("-")[0];
 	let name = $(x).attr("id").split("-")[1];
 	let cname = name+"SeenEvents";
+	let events = ["oneHeart","twoHearts","threeHearts","fourHearts","fiveHearts","sixHearts","sevenHearts","eightHearts","nineHearts","tenHearts","elevenHearts","twelveHearts","thirteenHearts","fourteenHearts"];
+	let eventNum = events.indexOf(eventName) + 1;
 
 	//get current cookie
 	let cookie = getCookie(cname);
@@ -11,13 +14,15 @@ function setSeenEvent(x){
 	if(x.checked){
 		let newCookie = cookie + eventName;
 		setCookie(cname,newCookie,100);
-		$("label[for='"+eventName+"-"+name+"']").addClass("selected");
-		$("#box-"+eventName+"-"+name).removeClass("bg-warning");
+		$("#box-"+id).removeClass("bg-warning");
 	} else {
 		let newCookie = cookie.replace(eventName,"");
 		setCookie(cname,newCookie,100);
-		$("label[for='"+eventName+"-"+name+"']").removeClass("selected");
-		$("#box-"+eventName+"-"+name).addClass("bg-warning");
+		//add the background if it shouldn't have been seen
+		let hearts = parseInt($("#currently-"+name).attr("data-value"));
+		if (hearts == eventNum){
+			$("#box-"+id).addClass("bg-warning");
+		}
 	}
 }
 
@@ -29,12 +34,8 @@ function loadSeen(eventName, name){
 
 	//if cookie contains event name, check it off
 	if(cookie.includes(eventName)){
-		$("label[for='"+checkbox+"']").addClass("selected");
-		$("#box-"+eventName+"-"+name).removeClass("bg-warning");
 		return "checked";
 	} else {
-		$("label[for='"+checkbox+"']").removeClass("selected");
-		$("#box-"+eventName+"-"+name).addClass("bg-warning");
 		return "";
 	}
 }
