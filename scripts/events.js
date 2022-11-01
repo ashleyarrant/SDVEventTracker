@@ -58,7 +58,7 @@ function clearData(){
 
 function colorCode(name) {
 	//for each box, if the value of the box is less than or equal to the current heart level, and the box is unchecked, make it yellow.
-	$("input[id~"+name+"]").each(function(){
+	$("input[id~="+name+"]").each(function(){
 		alert($(this).val());
 	});
 
