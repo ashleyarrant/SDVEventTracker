@@ -7,10 +7,6 @@ function one(name) {
 	if(r.length!=0){
 		r.text("(single)");
 	}
-	if( $("#oneHeart-"+name).prop("checked") == false) {
-		console.log("oneHeart has not been seen");
-		$("#box-oneHeart-"+name).addClass("bg-warning");
-	}
 }
 
 function two(name) {
