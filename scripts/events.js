@@ -45,9 +45,15 @@ function relationship(name){
 }
 
 function clearData(){
-	let conf = confirm("Are you sure you want to delete your data? You'll need to re-enter it.");
+	let conf = true; //confirm("Are you sure you want to delete your data? You'll need to re-enter it.");
 
 	if (conf) {
-		alert($("[id^=currently]").length);
+		$("[id^=currently]").each(function(){
+			let name = $(this).attr("id").replace("currently-","");
+			deleteCookie(name+"SeenEvents");
+			deleteCookie(name+"Hearts");
+		});
+
+		alert("Data deleted. Refresh page to reset.");
 	}
 }
