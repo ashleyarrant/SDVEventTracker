@@ -43,3 +43,11 @@ function relationship(name){
 		return "dating";
 	} else return "single";
 }
+
+function clearData(){
+	let conf = confirm("Are you sure you want to delete your data? You'll need to re-enter it.");
+
+	if (conf) {
+		alert($("[id^=currently]").length);
+	}
+}
