@@ -62,6 +62,14 @@ function colorCode(name) {
 	alert(x + " box counted for"+name);
 
 	$("input[id$="+name+"]").each(function(){
-		alert($(this).val());
+		//get numerical value of the event
+		let values = $(this).attr("id").split("-");
+		let events = ["oneHeart","twoHearts","threeHearts","fourHearts","fiveHearts","sixHearts","sevenHearts","eightHearts","nineHearts","tenHearts","elevenHearts","twelveHearts","thirteenHearts","fourteenHearts"];
+		let eventNum = events.indexOf(values[0]);
+		let hearts = parseInt($("#currently-"+name).attr("data-value"));
+
+		if(eventNum <= hearts && $(this).prop('checked') == false){
+			$("#box-" + $(this).attr("id")).addClass("bg-warning");
+		}
 	});
 }
