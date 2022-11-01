@@ -57,3 +57,7 @@ function clearData(){
 		alert("Data deleted. Refresh page to reset.");
 	}
 }
+
+function colorCode() {
+	alert("this is the function that will color code");
+}
