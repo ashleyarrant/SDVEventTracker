@@ -71,7 +71,7 @@
   <body>
 	<h1 class="display-1 pb-5">Stardew Valley Heart Event Tracker</h1>
 
-	<p class="lead pb-5">updating color coding</p>
+	<p class="lead pb-5">fixed the onload event to color code</p>
 
 	<div class="table-responsive">
 		<table class="table table-hover table-bordered">
@@ -193,7 +193,7 @@
 			let eventName = x;
 			let name = y;
 			
-			return loadSeen(eventName, name);
+			loadSeen(eventName, name);
 		});
 
 		Handlebars.registerHelper('relationship', function(x) {

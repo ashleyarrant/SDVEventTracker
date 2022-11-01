@@ -7,9 +7,8 @@ function one(name) {
 	if(r.length!=0){
 		r.text("(single)");
 	}
-
 	if( $("#oneHeart-"+name).prop("checked") == false) {
-		alert("oneHeart has not been seen");
+		console.log("oneHeart has not been seen");
 		$("#box-oneHeart-"+name).addClass("bg-warning");
 	}
 }
