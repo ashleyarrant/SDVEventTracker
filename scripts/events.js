@@ -48,7 +48,7 @@ function relationship(name){
 }
 
 function clearData(){
-	let conf = true; //confirm("Are you sure you want to delete your data? You'll need to re-enter it.");
+	let conf = confirm("Are you sure you want to delete your data? You'll need to re-enter it after the page refreshes.");
 
 	if (conf) {
 		$("[id^=currently]").each(function(){
@@ -56,15 +56,14 @@ function clearData(){
 			deleteCookie(name+"SeenEvents");
 			deleteCookie(name+"Hearts");
 		});
-
-		alert("Data deleted. Refresh page to reset.");
 	}
+
+	location.reload();
 }
 
 function colorCode(name) {
 	//for each box, if the value of the box is less than or equal to the current heart level, and the box is unchecked, make it yellow.
 	let x = $("input[id$="+name+"]").length;
-	alert(x + " box counted for"+name);
 
 	$("input[id$="+name+"]").each(function(){
 		//get numerical value of the event
