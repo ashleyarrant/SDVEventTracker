@@ -18,19 +18,33 @@
 		font-family:monospace;
 	}
 
+	td {
+		max-width:200px;
+	}
+
 	td[id^="currently"] img {
 		width:20px;
 		display:inline-block;
 		cursor:pointer;
 	}
 
-	td {
-		min-width:200px;
-	}
-
 	[id^="relationship"] {
 		font-size:0.9em;
 		font-style:italic;
+	}
+
+	td:first-child, th:first-child {
+		position:sticky;
+		left:0px;
+		background:white;
+		min-width:200px;
+	}
+
+	td:nth-child(2), th:nth-child(2) {
+		position:sticky;
+		left:200px;
+		background:white;
+		min-width:200px;
 	}
 
 	</style>
@@ -74,7 +88,7 @@
 	<button class="btn btn-danger mb-1" onclick="clearData()">delete data</button>
 
 	<div class="table-responsive">
-		<table class="table table-hover table-bordered">
+		<table class="table table-hover">
 			<thead>
 			<tr>
 				<th scope="col">Villiager</th>
@@ -93,6 +107,21 @@
 			</tr>
 			</thead>
 			<tbody>
+			<tr class="d-none">
+				<td>name</td>
+				<td>name</td>
+				<td>klasfdj;alskd jf;alksdjf;a lksdjf; alksdjf;alkdjf;alkds jf;alkdjf ;aldksfj ;alkdfj;alkdjf;alkdsjf ;alkdjf;aldkfj;a</td>
+				<td>klasfdj;alskd jf;alksdjf;a lksdjf; alksdjf;alkdjf;alkds jf;alkdjf ;aldksfj ;alkdfj;alkdjf;alkdsjf ;alkdjf;aldkfj;a</td>
+				<td>klasfdj;alskd jf;alksdjf;a lksdjf; alksdjf;alkdjf;alkds jf;alkdjf ;aldksfj ;alkdfj;alkdjf;alkdsjf ;alkdjf;aldkfj;a</td>
+				<td>klasfdj;alskd jf;alksdjf;a lksdjf; alksdjf;alkdjf;alkds jf;alkdjf ;aldksfj ;alkdfj;alkdjf;alkdsjf ;alkdjf;aldkfj;a</td>
+				<td>klasfdj;alskd jf;alksdjf;a lksdjf; alksdjf;alkdjf;alkds jf;alkdjf ;aldksfj ;alkdfj;alkdjf;alkdsjf ;alkdjf;aldkfj;a</td>
+				<td>klasfdj;alskd jf;alksdjf;a lksdjf; alksdjf;alkdjf;alkds jf;alkdjf ;aldksfj ;alkdfj;alkdjf;alkdsjf ;alkdjf;aldkfj;a</td>
+				<td>klasfdj;alskd jf;alksdjf;a lksdjf; alksdjf;alkdjf;alkds jf;alkdjf ;aldksfj ;alkdfj;alkdjf;alkdsjf ;alkdjf;aldkfj;a</td>
+				<td>klasfdj;alskd jf;alksdjf;a lksdjf; alksdjf;alkdjf;alkds jf;alkdjf ;aldksfj ;alkdfj;alkdjf;alkdsjf; alkdjf;aldkfj;a</td>
+				<td>klasfdj;alskd jf;alksdjf;a lksdjf; alksdjf;alkdjf;alkds jf;alkdjf ;aldksfj ;alkdfj;alkdjf;alkdsjf; alkdjf;aldkfj;a</td>
+				<td>klasfdj;alskd jf;alksdjf;a lksdjf; alksdjf;alkdjf;alkds jf;alkdjf ;aldksfj ;alkdfj;alkdjf;alkdsjf; alkdjf;aldkfj;a</td>
+				<td>klasfdj;alskd jf;alksdjf;a lksdjf; alksdjf;alkdjf;alkds jf;alkdjf ;aldksfj ;alkdfj;alkdjf;alkdsjf; alkdjf;aldkfj;a</td>
+			</tr>
 			</tbody>
 		</table>
 	</div>
