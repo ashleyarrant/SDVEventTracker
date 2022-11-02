@@ -40,6 +40,211 @@
 					"details": "Exit the Farmhouse in year 2+ between 5am and 8:20am on any day other than Sunday. You must have 5,000g available."
 				}
 			]
+		},
+		{
+			"name":"Elliott",
+			"canMarry": true,
+			"photo":"https://stardewvalleywiki.com/mediawiki/images/b/bd/Elliott.png",
+			"events":[
+				{
+					"name":"oneHeart",
+					"details":null
+				},{
+					"name":"twoHearts",
+					"details": "Enter Elliott's cabin when he's there."
+				},{
+					"name":"threeHearts",
+					"details":null
+				},{
+					"name":"fourHearts",
+					"details":"Enter the Stardrop Saloon between 3pm and 10pm when Gus is there."
+				},{
+					"name":"fiveHearts",
+					"details":null
+				},{
+					"name":"sixHearts",
+					"details":"Enter Elliott's home when he's there."
+				},{
+					"name":"sevenHearts",
+					"details":null
+				},{
+					"name":"eightHearts",
+					"details":"After receiving a letter from Elliott, visit the museum between 1pm and 7pm. (It doesn't need to be the same day.)"
+				},{
+					"name":"nineHearts",
+					"details":null
+				},{
+					"name":"tenHearts",
+					"details":"Go to the beach on a day when it is not raining between 7am and 1pm. A letter will be sent to you but it is not needed to trigger the event."
+				},{
+					"name":"fourteenHearts",
+					"details":"Exit the farm house between 6am and 3pm on a day when there are no Festivals occurring for the next 8 days."
+				}
+			]
+		},
+		{
+			"name":"Harvey",
+			"canMarry": true,
+			"photo":"https://stardewvalleywiki.com/mediawiki/images/9/95/Harvey.png",
+			"events":[
+				{
+					"name":"oneHeart",
+					"details":null
+				},{
+					"name":"twoHearts",
+					"details": "Enter George's house while George is there."
+				},{
+					"name":"threeHearts",
+					"details":null
+				},{
+					"name":"fourHearts",
+					"details":"Enter the clinic when Harvey is there."
+				},{
+					"name":"fiveHearts",
+					"details":null
+				},{
+					"name":"sixHearts",
+					"details":"Enter the general store between 11am and 3pm."
+				},{
+					"name":"sevenHearts",
+					"details":null
+				},{
+					"name":"eightHearts",
+					"details":"Enter the clinic."
+				},{
+					"name":"nineHearts",
+					"details":null
+				},{
+					"name":"tenHearts",
+					"details":"Harvey sends you a letter asking to meet at the railroad tracks. Go there between 9am and 5pm."
+				},{
+					"name":"fourteenHearts",
+					"details":"Enter an upgraded farm house (needs to be upgraded at least twice) between 8pm and midnight."
+				}
+			]
+		},
+		{
+			"name":"Sam",
+			"canMarry": true,
+			"photo":"https://stardewvalleywiki.com/mediawiki/images/9/94/Sam.png",
+			"events":[
+				{
+					"name":"oneHeart",
+					"details":null
+				},{
+					"name":"twoHearts",
+					"details": "Enter Sam's house when he's there."
+				},{
+					"name":"threeHearts",
+					"details":"In any season except winter, enter the beach on a sunny day between 7am and 3pm. This event only happens in Year 1."
+				},{
+					"name":"fourHearts",
+					"details":"Enter Sam's house when he's there."
+				},{
+					"name":"fiveHearts",
+					"details":null
+				},{
+					"name":"sixHearts",
+					"details":"On any day when it's not raining, enter the town between noon and 4pm."
+				},{
+					"name":"sevenHearts",
+					"details":null
+				},{
+					"name":"eightHearts",
+					"details":"Sam shows up at your doorstop between 6am and 8am. Only triggers if you've seen his two-heart event."
+				},{
+					"name":"nineHearts",
+					"details":null
+				},{
+					"name":"tenHearts",
+					"details":"After receiving a letter from Sam, enter the town on a sunny day between 8pm and midnight."
+				},{
+					"name":"fourteenHearts",
+					"details":"Part 1: Enter an upgraded farmhouse (needs to be upgraded at least twice) between 6:10am and 5:00pm, when Sam is inside.&NewLine;Part 2: Three days later, enter the farmhouse between 6:10am and 5pm, when Sam is inside.&NewLine;Part 3: Three days later, enter the farmhouse between 6:10am and 5pm, when Sam is inside.&NewLine;Part 4: Four days later, enter the farmhouse between 6:10am and 5pm, when Sam is inside."
+				}
+			]
+		},
+		{
+			"name":"Sebastian",
+			"canMarry": true,
+			"photo":"https://stardewvalleywiki.com/mediawiki/images/a/a8/Sebastian.png",
+			"events":[
+				{
+					"name":"oneHeart",
+					"details":null
+				},{
+					"name":"twoHearts",
+					"details": "Enter Sebastian's room when he's there."
+				},{
+					"name":"threeHearts",
+					"details":null
+				},{
+					"name":"fourHearts",
+					"details":"Go to The Mountain between 11am and 5pm."
+				},{
+					"name":"fiveHearts",
+					"details":null
+				},{
+					"name":"sixHearts",
+					"details":"Enter Sebastian's room when he's there."
+				},{
+					"name":"sevenHearts",
+					"details":null
+				},{
+					"name":"eightHearts",
+					"details":"Go to the beach on a rainy day between noon and 11pm."
+				},{
+					"name":"nineHearts",
+					"details":null
+				},{
+					"name":"tenHearts",
+					"details":"Go to The Mountain between 8pm and midnight."
+				},{
+					"name":"fourteenHearts",
+					"details":"Go to The Mountain on a rainy day between 6am and 7pm."
+				}
+			]
+		},
+		{
+			"name":"Shane",
+			"canMarry": true,
+			"photo":"https://stardewvalleywiki.com/mediawiki/images/8/8b/Shane.png",
+			"events":[
+				{
+					"name":"oneHeart",
+					"details":null
+				},{
+					"name":"twoHearts",
+					"details": "Enter Cindersap Forest between 8pm and midnight."
+				},{
+					"name":"threeHearts",
+					"details":"After reaching 3 hearts with Shane, he will send you a recipe in the mail. He will also become slightly less rude to you during dialogues."
+				},{
+					"name":"fourHearts",
+					"details":"Enter Marnie's Ranch at any time."
+				},{
+					"name":"fiveHearts",
+					"details":null
+				},{
+					"name":"sixHearts",
+					"details":"Enter Cindersap Forest between 9am and 8pm while storming or raining."
+				},{
+					"name":"sevenHearts",
+					"details":"Part 1:Enter Marnie's Ranch while Shane is home after triggering Shane's six heart event.&newline;Part 2: Enter the town between 10am and 4pm on a sunny day. (Also requires 2 hearts with both Emily and Clint.)&newline;After reaching 7 hearts with Shane, he will send you a recipe in the mail."
+				},{
+					"name":"eightHearts",
+					"details":"Enter Marnie's Ranch while Shane is home."
+				},{
+					"name":"nineHearts",
+					"details":null
+				},{
+					"name":"tenHearts",
+					"details":"Exit your house before 6:30am to initiate the event, then walk to the Bus Stop between 4pm and 6pm."
+				},{
+					"name":"fourteenHearts",
+					"details":"Enter town on a non-Friday between 8am and 5pm. For parts II and III enter town anytime each of the next two days."
+				}
+			]
 		}
 	]
 }
