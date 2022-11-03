@@ -18,10 +18,11 @@
 		font-family:monospace;
 	}
 
-	td[id^="currently"] img {
+	[id^="currently"] img {
 		width:20px;
 		display:inline-block;
 		cursor:pointer;
+		margin-right:-1px;
 	}
 
 	td, th {
@@ -43,14 +44,7 @@
 		position:sticky;
 		left:0px;
 		background:white;
-		min-width:200px;
-	}
-
-	td:nth-child(2), th:nth-child(2) {
-		position:sticky;
-		left:200px;
-		background:white;
-		min-width:200px;
+		min-width:400px;
 	}
 
 	</style>
@@ -98,7 +92,6 @@
 			<thead>
 			<tr>
 				<th scope="col">Villiager</th>
-				<th scope="col">Currently</th>
 				<th scope="col">1 heart</th>
 				<th scope="col">2 hearts</th>
 				<th scope="col">3 hearts</th>
@@ -113,7 +106,48 @@
 			</tr>
 			</thead>
 			<tbody>
-				
+				<tr>
+					<tr>
+			<td>
+				<div class="d-flex align-items-center">
+					<div class="flex-shrink-0">
+						<img src="{{photo}}" alt="" height="75">
+						</div>
+						<div class="flex-grow-1 ms-3">
+						test
+						<div id="relationship-test">(single)</div>
+					</div>
+				</div>
+				<div id="currently-test" data-value="{{checkHearts name}}" class="mt-3">
+					<img src="empty.png" onclick="one('test')">
+					<img src="empty.png" onclick="two('test')">
+					<img src="empty.png" onclick="three('test')">
+					<img src="empty.png" onclick="four('test')">
+					<img src="empty.png" onclick="five('test')">
+					<img src="empty.png" onclick="six('test')">
+					<img src="empty.png" onclick="seven('test')">
+					<img src="empty.png" onclick="eight('test')">
+					<img src="empty.png" onclick="nine('test')">
+					<img src="empty.png" onclick="ten('test')">
+					<img src="empty.png" onclick="eleven('test')">
+					<img src="empty.png" onclick="twelve('test')">
+					<img src="empty.png" onclick="thirteen('test')">
+					<img src="empty.png" onclick="fourteen('test')">
+				</div>
+			</td>
+			<td id="box-test-{{../name}}">{{#if details}}
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="{{eventValue name}}" id="test-{{../name}}" onclick="setSeenEvent(this)" {{markSeen name ../name}}>
+					<label class="form-check-label d-block" for="test-{{../name}}">
+					{{{details}}}
+					</label>
+				</div>
+				{{else}}
+				[no event]
+				{{/if}}
+			</td>
+		</tr>
+				</tr>
 			</tbody>
 		</table>
 	</div>
@@ -210,8 +244,8 @@
 			//for each row
 			for(let i=0;i<rows;i++){
 				//populate currently
-				let val = parseInt($("tbody tr:nth-child("+(i+1)+") td[id^='currently']").attr("data-value"));
-				let name = $("tbody tr:nth-child("+(i+1)+") td[id^='currently']").attr("id").replace("currently-","");
+				let val = parseInt($("tbody tr:nth-child("+(i+1)+") [id^='currently']").attr("data-value"));
+				let name = $("tbody tr:nth-child("+(i+1)+") [id^='currently']").attr("id").replace("currently-","");
 				
 				switch(val){
 					case 1: one(name); break;
