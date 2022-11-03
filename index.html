@@ -145,10 +145,12 @@
 				<img src="empty.png" onclick="eight('{{name}}')">
 				<img src="empty.png" onclick="nine('{{name}}')">
 				<img src="empty.png" onclick="ten('{{name}}')">
+				{{#if canMarry}}
 				<img src="empty.png" onclick="eleven('{{name}}')">
 				<img src="empty.png" onclick="twelve('{{name}}')">
 				<img src="empty.png" onclick="thirteen('{{name}}')">
 				<img src="empty.png" onclick="fourteen('{{name}}')">
+				{{/if}}
 			</td>
 			{{#each events}}
 			<td id="box-{{name}}-{{../name}}">{{#if details}}
