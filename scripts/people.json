@@ -245,6 +245,539 @@
 					"details":"Enter town on a non-Friday between 8am and 5pm. For parts II and III enter town anytime each of the next two days."
 				}
 			]
+		},
+		{
+			"name":"Abigail",
+			"canMarry": true,
+			"photo":"https://stardewvalleywiki.com/mediawiki/images/8/88/Abigail.png",
+			"events":[
+				{
+					"name":"oneHeart",
+					"details":null
+				},{
+					"name":"twoHearts",
+					"details": "Enter Pierre's General Store when Abigail is there, any day except Saturday."
+				},{
+					"name":"threeHearts",
+					"details": null
+				},{
+					"name":"fourHearts",
+					"details":"Visit the mountain between noon and 7pm on a rainy day, any season except Winter."
+				},{
+					"name":"fiveHearts",
+					"details":null
+				},{
+					"name":"sixHearts",
+					"details":"Between 9pm and midnight on a day when it is not raining, enter Pelican Town from any direction. (This includes exiting homes or shops in Town.)"
+				},{
+					"name":"sevenHearts",
+					"details":null
+				},{
+					"name":"eightHearts",
+					"details":"After receiving a letter from Abigail, enter Pierre's General Store between 8pm and 10pm when she's there. (Note that you cannot enter the store from outside after 9pm, but you can wait in Caroline's greenhouse and trigger the event by exiting to the kitchen.)"
+				},{
+					"name":"nineHearts",
+					"details":null
+				},{
+					"name":"tenHearts",
+					"details":"After you give Abigail a Bouquet, enter the mines or the Quarry Mine between 5pm and midnight. The event won't trigger if you've already given her the Mermaid's Pendant."
+				},{
+					"name":"fourteenHearts",
+					"details":"Enter the Backwoods between 6:10am and 5pm."
+				}
+			]
+		},
+		{
+			"name":"Emily",
+			"canMarry": true,
+			"photo":"https://stardewvalleywiki.com/mediawiki/images/2/28/Emily.png",
+			"events":[
+				{
+					"name":"oneHeart",
+					"details":null
+				},{
+					"name":"twoHearts",
+					"details":"Enter Emily's house."
+				},{
+					"name":"threeHearts",
+					"details":"After reaching 3 hearts with Emily she will send you a recipe in the mail."
+				},{
+					"name":"fourHearts",
+					"details":"Enter town on a sunny day. Cannot be triggered in winter."
+				},{
+					"name":"fiveHearts",
+					"details":null
+				},{
+					"name":"sixHearts",
+					"details":"Visit Emily's house when she's there."
+				},{
+					"name":"sevenHearts",
+					"details":"After reaching 7 hearts with Emily she will send you a recipe in the mail."
+				},{
+					"name":"eightHearts",
+					"details":"A letter in the mail will invite the player to the Mayor's Manor that same day during open hours.<br><br>This event will still be available on subsequent days if you missed it the first day."
+				},{
+					"name":"nineHearts",
+					"details":null
+				},{
+					"name":"tenHearts",
+					"details":"A letter will invite the player to meet Emily in the Secret Woods after 10pm that night.<br><br>You will need a Steel Axe in order to break the Large Log blocking the entrance to the Secret Woods. If you do not have a Steel axe, do not worry, as the heart event will trigger whenever you next go into the Secret Woods after 10 pm and when it is not raining or a festival day.<br><br>After triggering the cut-scene, the night will immediately end for the player."
+				},{
+					"name":"fourteenHearts",
+					"details":"Exit the farmhouse between 6am and 8:20am."
+				}
+			]
+		},
+		{
+			"name":"Haley",
+			"canMarry": true,
+			"photo":"https://stardewvalleywiki.com/mediawiki/images/1/1b/Haley.png",
+			"events":[
+				{
+					"name":"oneHeart",
+					"details":null
+				},{
+					"name":"twoHearts",
+					"details": "Enter Haley and Emily's home when they're both there."
+				},{
+					"name":"threeHearts",
+					"details": null
+				},{
+					"name":"fourHearts",
+					"details":"Enter Haley's home when she's there."
+				},{
+					"name":"fiveHearts",
+					"details":null
+				},{
+					"name":"sixHearts",
+					"details":"Go to the beach between 10 AM and 4 PM during any season except Winter."
+				},{
+					"name":"sevenHearts",
+					"details":null
+				},{
+					"name":"eightHearts",
+					"details":"On a sunny day during any season except Winter, enter Cindersap Forest between 10 AM and 4 PM."
+				},{
+					"name":"nineHearts",
+					"details":null
+				},{
+					"name":"tenHearts",
+					"details":"Enter Haley's house when she's there."
+				},{
+					"name":"fourteenHearts",
+					"details":"<ol><li>Enter town between 8am and 3pm on a day that's not raining.</li><li>At least one day later, enter the Farm House between 6:20am and 5pm.</li><li>Enter Pelican Town with a chocolate cake in inventory between 6am and 3pm on a day that's not raining.</li></ol>"
+				}
+			]
+		},
+		{
+			"name":"Leah",
+			"canMarry": true,
+			"photo":"https://stardewvalleywiki.com/mediawiki/images/e/e6/Leah.png",
+			"events":[
+				{
+					"name":"oneHeart",
+					"details":null
+				},{
+					"name":"twoHearts",
+					"details": "Enter Leah's cottage when she's there."
+				},{
+					"name":"threeHearts",
+					"details":null
+				},{
+					"name":"fourHearts",
+					"details": "Enter Leah's cottage when she's there."
+				},{
+					"name":"fiveHearts",
+					"details":null
+				},{
+					"name":"sixHearts",
+					"details":"<ol><li>Leah is at your farmhouse door on any day but rainy between 6 AM and 11:30 AM.</li><li>Enter Cindersap Forest when Leah is there, in any season except winter.</li></ol>"
+				},{
+					"name":"sevenHearts",
+					"details":null
+				},{
+					"name":"eightHearts",
+					"details":"If you suggested an art show in her two-heart event, Leah is at your farmhouse door between 6 AM and 8 AM (except in winter) to invite you to her art show. Enter Pelican Town between 3 PM and 5 PM (not necessarily the same day).<br><br>If you suggested an art website in her two-heart event, enter Leah's Cottage when she's there."
+				},{
+					"name":"nineHearts",
+					"details":null
+				},{
+					"name":"tenHearts",
+					"details":"Enter Cindersap Forest between 11 AM and 4 PM, in any season except winter."
+				},{
+					"name":"fourteenHearts",
+					"details":"Exit the farmhouse between 6am and 8:20am on a sunny day that isn't Sunday and isn't in winter."
+				}
+			]
+		},
+		{
+			"name":"Maru",
+			"canMarry": true,
+			"photo":"https://stardewvalleywiki.com/mediawiki/images/f/f8/Maru.png",
+			"events":[
+				{
+					"name":"oneHeart",
+					"details":null
+				},{
+					"name":"twoHearts",
+					"details": "Enter the Carpenter's Shop when Maru is there."
+				},{
+					"name":"threeHearts",
+					"details":null
+				},{
+					"name":"fourHearts",
+					"details":"Enter the clinic when Maru is there."
+				},{
+					"name":"fiveHearts",
+					"details":null
+				},{
+					"name":"sixHearts",
+					"details":"Enter the mountain on a sunny day, between 9pm and 11:40pm."
+				},{
+					"name":"sevenHearts",
+					"details":null
+				},{
+					"name":"eightHearts",
+					"details": "Enter the Carpenter's Shop when Maru is there."
+				},{
+					"name":"nineHearts",
+					"details":null
+				},{
+					"name":"tenHearts",
+					"details":"Enter the Carpenter's Shop between 9am and 4pm."
+				},{
+					"name":"fourteenHearts",
+					"details":"<ol><li>Enter the Farmhouse between 6:10am and 5pm on a non-Sunday non-winter day.</li><li>Enter the Mountains between 10:00pm and 1:00am on a sunny day.</li></ol>"
+				}
+			]
+		},
+		{
+			"name":"Penny",
+			"canMarry": true,
+			"photo":"https://stardewvalleywiki.com/mediawiki/images/a/ab/Penny.png",
+			"events":[
+				{
+					"name":"oneHeart",
+					"details":null
+				},{
+					"name":"twoHearts",
+					"details": "Enter Pelican Town on a sunny day between 9am and 2pm."
+				},{
+					"name":"threeHearts",
+					"details":null
+				},{
+					"name":"fourHearts",
+					"details":"Enter the trailer when she's home."
+				},{
+					"name":"fiveHearts",
+					"details":null
+				},{
+					"name":"sixHearts",
+					"details":"Enter the trailer when she's home."
+				},{
+					"name":"sevenHearts",
+					"details":null
+				},{
+					"name":"eightHearts",
+					"details":"Enter Cindersap Forest between 9am and 4pm."
+				},{
+					"name":"nineHearts",
+					"details":null
+				},{
+					"name":"tenHearts",
+					"details":"You receive a letter from Penny. After receiving the letter, enter the pool area of the spa between 7pm and midnight."
+				},{
+					"name":"fourteenHearts",
+					"details":"Enter the farm house between 3pm and 7pm when she's home."
+				}
+			]
+		},
+		{
+			"name":"Caroline",
+			"canMarry": false,
+			"photo":"https://stardewvalleywiki.com/mediawiki/images/8/87/Caroline.png",
+			"events":[
+				{
+					"name":"oneHeart",
+					"details":null
+				},{
+					"name":"twoHearts",
+					"details": "Enter the sunroom via the door in Caroline's kitchen between 9am and 5pm on a day when it's not raining."
+				},{
+					"name":"threeHearts",
+					"details":"Caroline sends you a recipe in the mail."
+				},{
+					"name":"fourHearts",
+					"details":null
+				},{
+					"name":"fiveHearts",
+					"details":null
+				},{
+					"name":"sixHearts",
+					"details":"Enter Pierre's General Store when Caroline and Abigail are there."
+				},{
+					"name":"sevenHearts",
+					"details":"Caroline sends you a recipe in the mail."
+				},{
+					"name":"eightHearts",
+					"details":null
+				},{
+					"name":"nineHearts",
+					"details":null
+				},{
+					"name":"tenHearts",
+					"details":null
+				},{
+					"name":"fourteenHearts",
+					"details":null
+				}
+			]
+		},
+		{
+			"name":"Clint",
+			"canMarry": false,
+			"photo":"https://stardewvalleywiki.com/mediawiki/images/3/31/Clint.png",
+			"events":[
+				{
+					"name":"oneHeart",
+					"details":
+				},{
+					"name":"twoHearts",
+					"details": null
+				},{
+					"name":"threeHearts",
+					"details":"<ol><li>Visit the saloon between 7pm and 11pm on a Monday.</li><li>Clint sends you a recipe in the mail.>/li></ol>"
+				},{
+					"name":"fourHearts",
+					"details":null
+				},{
+					"name":"fiveHearts",
+					"details":null
+				},{
+					"name":"sixHearts",
+					"details":'Enter town from Cindersap Forest between 9am and 6:30pm. Only happens if you saw his "Three Hearts I" event.<br>Note: This event will not trigger if you are married to Emily, or have seen her Eight Heart Event or Ten Heart event.'
+				},{
+					"name":"sevenHearts",
+					"details":"Clint sends you a recipe in the mail."
+				},{
+					"name":"eightHearts",
+					"details":null
+				},{
+					"name":"nineHearts",
+					"details":null
+				},{
+					"name":"tenHearts",
+					"details":null
+				},{
+					"name":"fourteenHearts",
+					"details":null
+				}
+			]
+		},
+		{
+			"name":"Demetrius",
+			"canMarry": false,
+			"photo":"https://stardewvalleywiki.com/mediawiki/images/f/f9/Demetrius.png",
+			"events":[
+				{
+					"name":"oneHeart",
+					"details":null
+				},{
+					"name":"twoHearts",
+					"details": null
+				},{
+					"name":"threeHearts",
+					"details":"Demetrius sends you a recipe in the mail."
+				},{
+					"name":"fourHearts",
+					"details":null
+				},{
+					"name":"fiveHearts",
+					"details":null
+				},{
+					"name":"sixHearts",
+					"details":"Enter Demetrius' house while he and Robin are inside."
+				},{
+					"name":"sevenHearts",
+					"details":"Demetrius sends you a recipe in the mail."
+				},{
+					"name":"eightHearts",
+					"details":null
+				},{
+					"name":"nineHearts",
+					"details":null
+				},{
+					"name":"tenHearts",
+					"details":null
+				},{
+					"name":"fourteenHearts",
+					"details":null
+				}
+			]
+		},
+		{
+			"name":"Evelyn",
+			"canMarry": false,
+			"photo":"https://stardewvalleywiki.com/mediawiki/images/8/8e/Evelyn.png",
+			"events":[
+				{
+					"name":"oneHeart",
+					"details":null
+				},{
+					"name":"twoHearts",
+					"details": null
+				},{
+					"name":"threeHearts",
+					"details":null
+				},{
+					"name":"fourHearts",
+					"details":"Enter Evelyn's home while she is inside."
+				},{
+					"name":"fiveHearts",
+					"details":null
+				},{
+					"name":"sixHearts",
+					"details":null
+				},{
+					"name":"sevenHearts",
+					"details":"Evelyn sends you a recipe in the mail."
+				},{
+					"name":"eightHearts",
+					"details":null
+				},{
+					"name":"nineHearts",
+					"details":null
+				},{
+					"name":"tenHearts",
+					"details":null
+				},{
+					"name":"fourteenHearts",
+					"details":null
+				}
+			]
+		},
+		{
+			"name":"George",
+			"canMarry": false,
+			"photo":"https://stardewvalleywiki.com/mediawiki/images/7/78/George.png",
+			"events":[
+				{
+					"name":"oneHeart",
+					"details":null
+				},{
+					"name":"twoHearts",
+					"details": null
+				},{
+					"name":"threeHearts",
+					"details":"George sends you a recipe in the mail."
+				},{
+					"name":"fourHearts",
+					"details":null
+				},{
+					"name":"fiveHearts",
+					"details":null
+				},{
+					"name":"sixHearts",
+					"details":"Enter George's house when he is home."
+				},{
+					"name":"sevenHearts",
+					"details":"George sends you a recipe in the mail."
+				},{
+					"name":"eightHearts",
+					"details":null
+				},{
+					"name":"nineHearts",
+					"details":null
+				},{
+					"name":"tenHearts",
+					"details":null
+				},{
+					"name":"fourteenHearts",
+					"details":null
+				}
+			]
+		},
+		{
+			"name":"Gus",
+			"canMarry": false,
+			"photo":"https://stardewvalleywiki.com/mediawiki/images/5/52/Gus.png",
+			"events":[
+				{
+					"name":"oneHeart",
+					"details":null
+				},{
+					"name":"twoHearts",
+					"details": null
+				},{
+					"name":"threeHearts",
+					"details":"Gus sends you a recipe in the mail."
+				},{
+					"name":"fourHearts",
+					"details":"Enter the Saloon during business hours, when Gus is inside.<br><br>Note: only occurs if your friendship with Pam is at least 2 hearts."
+				},{
+					"name":"fiveHearts",
+					"details":"Exit the farmhouse on a non-rainy day between 6am and 11:30am"
+				},{
+					"name":"sixHearts",
+					"details":null
+				},{
+					"name":"sevenHearts",
+					"details":"Gus sends you a recipe in the mail."
+				},{
+					"name":"eightHearts",
+					"details":null
+				},{
+					"name":"nineHearts",
+					"details":null
+				},{
+					"name":"tenHearts",
+					"details":null
+				},{
+					"name":"fourteenHearts",
+					"details":null
+				}
+			]
+		},
+		{
+			"name":"Jas",
+			"canMarry": false,
+			"photo":"https://stardewvalleywiki.com/mediawiki/images/5/55/Jas.png",
+			"events":[
+				{
+					"name":"oneHeart",
+					"details":null
+				},{
+					"name":"twoHearts",
+					"details": null
+				},{
+					"name":"threeHearts",
+					"details":null
+				},{
+					"name":"fourHearts",
+					"details":null
+				},{
+					"name":"fiveHearts",
+					"details":null
+				},{
+					"name":"sixHearts",
+					"details":null
+				},{
+					"name":"sevenHearts",
+					"details":null
+				},{
+					"name":"eightHearts",
+					"details":"After reaching 8 hearts with both Jas and Vincent, enter Cindersap Forest during Spring on a sunny day between 6am and 5pm."
+				},{
+					"name":"nineHearts",
+					"details":null
+				},{
+					"name":"tenHearts",
+					"details":null
+				},{
+					"name":"fourteenHearts",
+					"details":null
+				}
+			]
 		}
 	]
 }
