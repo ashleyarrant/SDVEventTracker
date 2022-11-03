@@ -540,7 +540,7 @@
 			"events":[
 				{
 					"name":"oneHeart",
-					"details":
+					"details":null
 				},{
 					"name":"twoHearts",
 					"details": null
