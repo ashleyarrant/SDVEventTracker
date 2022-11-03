@@ -160,7 +160,7 @@
 					"details":"After receiving a letter from Sam, enter the town on a sunny day between 8pm and midnight."
 				},{
 					"name":"fourteenHearts",
-					"details":"<strong>Part 1: </strong>Enter an upgraded farmhouse (needs to be upgraded at least twice) between 6:10am and 5:00pm, when Sam is inside.<br><strong>Part 2: </strong>Three days later, enter the farmhouse between 6:10am and 5pm, when Sam is inside.<br><strong>Part 3: </strong>Three days later, enter the farmhouse between 6:10am and 5pm, when Sam is inside.<br><strong>Part 4: </strong>Four days later, enter the farmhouse between 6:10am and 5pm, when Sam is inside."
+					"details":"<ol><li>Enter an upgraded farmhouse (needs to be upgraded at least twice) between 6:10am and 5:00pm, when Sam is inside.</li><li>Three days later, enter the farmhouse between 6:10am and 5pm, when Sam is inside.</li><li>Three days later, enter the farmhouse between 6:10am and 5pm, when Sam is inside.</li><li>Four days later, enter the farmhouse between 6:10am and 5pm, when Sam is inside.</li></ol>"
 				}
 			]
 		},
@@ -230,7 +230,7 @@
 					"details":"Enter Cindersap Forest between 9am and 8pm while storming or raining."
 				},{
 					"name":"sevenHearts",
-					"details":"<strong>Part 1: </strong>Enter Marnie's Ranch while Shane is home after triggering Shane's six heart event.<br><strong>Part 2: </strong>Enter the town between 10am and 4pm on a sunny day. (Also requires 2 hearts with both Emily and Clint.)<br>After reaching 7 hearts with Shane, he will send you a recipe in the mail."
+					"details":"<ol><li>Enter Marnie's Ranch while Shane is home after triggering Shane's six heart event.</li><li>Enter the town between 10am and 4pm on a sunny day. (Also requires 2 hearts with both Emily and Clint.)</li><li>After reaching 7 hearts with Shane, he will send you a recipe in the mail.</li></ol>"
 				},{
 					"name":"eightHearts",
 					"details":"Enter Marnie's Ranch while Shane is home."
