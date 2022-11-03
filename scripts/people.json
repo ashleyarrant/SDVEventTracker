@@ -555,7 +555,7 @@
 					"details":null
 				},{
 					"name":"sixHearts",
-					"details":'Enter town from Cindersap Forest between 9am and 6:30pm. Only happens if you saw his "Three Hearts I" event.<br>Note: This event will not trigger if you are married to Emily, or have seen her Eight Heart Event or Ten Heart event.'
+					"details":"Enter town from Cindersap Forest between 9am and 6:30pm. Only happens if you saw his &quot;Three Hearts I&quot; event.<br>Note: This event will not trigger if you are married to Emily, or have seen her Eight Heart Event or Ten Heart event."
 				},{
 					"name":"sevenHearts",
 					"details":"Clint sends you a recipe in the mail."
