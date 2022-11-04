@@ -1356,7 +1356,7 @@
 		{
 			"name":"Wizard",
 			"canMarry": false,
-			"photo":"NULL",
+			"photo":"https://stardewvalleywiki.com/mediawiki/images/c/c7/Wizard.png",
 			"events":[
 				{
 					"name":"oneHeart",
