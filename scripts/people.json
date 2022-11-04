@@ -616,6 +616,47 @@
 			]
 		},
 		{
+			"name":"Dwarf",
+			"canMarry": false,
+			"photo":"https://stardewvalleywiki.com/mediawiki/images/e/ed/Dwarf.png",
+			"events":[
+				{
+					"name":"oneHeart",
+					"details":"After earning 50 Friendship points with the Dwarf, enter The Sewers. A Stardrop must have been purchased from Krobus."
+				},{
+					"name":"twoHearts",
+					"details": null
+				},{
+					"name":"threeHearts",
+					"details":null
+				},{
+					"name":"fourHearts",
+					"details":null
+				},{
+					"name":"fiveHearts",
+					"details":null
+				},{
+					"name":"sixHearts",
+					"details":null
+				},{
+					"name":"sevenHearts",
+					"details":null
+				},{
+					"name":"eightHearts",
+					"details":null
+				},{
+					"name":"nineHearts",
+					"details":null
+				},{
+					"name":"tenHearts",
+					"details":null
+				},{
+					"name":"fourteenHearts",
+					"details":null
+				}
+			]
+		},
+		{
 			"name":"Evelyn",
 			"canMarry": false,
 			"photo":"https://stardewvalleywiki.com/mediawiki/images/8/8e/Evelyn.png",
@@ -767,6 +808,580 @@
 				},{
 					"name":"eightHearts",
 					"details":"After reaching 8 hearts with both Jas and Vincent, enter Cindersap Forest during Spring on a sunny day between 6am and 5pm."
+				},{
+					"name":"nineHearts",
+					"details":null
+				},{
+					"name":"tenHearts",
+					"details":null
+				},{
+					"name":"fourteenHearts",
+					"details":null
+				}
+			]
+		},
+		{
+			"name":"Jodi",
+			"canMarry": false,
+			"photo":"https://stardewvalleywiki.com/mediawiki/images/4/41/Jodi.png",
+			"events":[
+				{
+					"name":"oneHeart",
+					"details":null
+				},{
+					"name":"twoHearts",
+					"details": "When the player reaches 2 hearts, they can enter her room and find a letter from her husband Kent in the drawer next to her bed."
+				},{
+					"name":"threeHearts",
+					"details":"After reaching 3 hearts, Jodi will send you a recipe in the mail."
+				},{
+					"name":"fourHearts",
+					"details":"Leave your farmhouse between 6:00am - 9:30am on a Monday to find Jodi waiting outside."
+				},{
+					"name":"fiveHearts",
+					"details":null
+				},{
+					"name":"sixHearts",
+					"details":null
+				},{
+					"name":"sevenHearts",
+					"details":"After reaching 7 hearts, Jodi sends you a recipe in the mail."
+				},{
+					"name":"eightHearts",
+					"details":null
+				},{
+					"name":"nineHearts",
+					"details":null
+				},{
+					"name":"tenHearts",
+					"details":null
+				},{
+					"name":"fourteenHearts",
+					"details":null
+				}
+			]
+		},
+		{
+			"name":"Kent",
+			"canMarry": false,
+			"photo":"https://stardewvalleywiki.com/mediawiki/images/9/99/Kent.png",
+			"events":[
+				{
+					"name":"oneHeart",
+					"details":null
+				},{
+					"name":"twoHearts",
+					"details": null
+				},{
+					"name":"threeHearts",
+					"details":"Enter Kent's home while he and Jodi are both there.<br>Also, Kent will send the player a recipe in the mail."
+				},{
+					"name":"fourHearts",
+					"details":null
+				},{
+					"name":"fiveHearts",
+					"details":null
+				},{
+					"name":"sixHearts",
+					"details":null
+				},{
+					"name":"sevenHearts",
+					"details":"After reaching seven hearts with Kent, he will send the player a recipe in the mail."
+				},{
+					"name":"eightHearts",
+					"details":null
+				},{
+					"name":"nineHearts",
+					"details":null
+				},{
+					"name":"tenHearts",
+					"details":null
+				},{
+					"name":"fourteenHearts",
+					"details":null
+				}
+			]
+		},
+		{
+			"name":"Krobus",
+			"canMarry": false,
+			"photo":"https://stardewvalleywiki.com/mediawiki/images/7/71/Krobus.png",
+			"events":[
+				{
+					"name":"oneHeart",
+					"details":null
+				},{
+					"name":"twoHearts",
+					"details": null
+				},{
+					"name":"threeHearts",
+					"details":"After reaching 3 hearts with Krobus he will send you a recipe in the mail."
+				},{
+					"name":"fourHearts",
+					"details":null
+				},{
+					"name":"fiveHearts",
+					"details":null
+				},{
+					"name":"sixHearts",
+					"details":null
+				},{
+					"name":"sevenHearts",
+					"details":null
+				},{
+					"name":"eightHearts",
+					"details":null
+				},{
+					"name":"nineHearts",
+					"details":null
+				},{
+					"name":"tenHearts",
+					"details":null
+				},{
+					"name":"fourteenHearts",
+					"details":"Enter the beach between 8pm and 1am on a non-rainy day."
+				}
+			]
+		},
+		{
+			"name":"Leo",
+			"canMarry": false,
+			"photo":"https://stardewvalleywiki.com/mediawiki/images/1/1d/Leo.png",
+			"events":[
+				{
+					"name":"oneHeart",
+					"details":null
+				},{
+					"name":"twoHearts",
+					"details": "Enter Island West on a sunny day between 6am and 6pm."
+				},{
+					"name":"threeHearts",
+					"details":"After reaching three hearts with Leo, he sends the player a recipe in the mail."
+				},{
+					"name":"fourHearts",
+					"details":"Enter Island North on a sunny day between 6am and 6pm."
+				},{
+					"name":"fiveHearts",
+					"details":null
+				},{
+					"name":"sixHearts",
+					"details":"Enter Island South on a sunny day between 6am and 6pm."
+				},{
+					"name":"sevenHearts",
+					"details":"After reaching seven hearts with Leo, he sends the player a recipe in the mail."
+				},{
+					"name":"eightHearts",
+					"details":null
+				},{
+					"name":"nineHearts",
+					"details":"Enter the Mountain on a non-rainy day between 6am and 7pm."
+				},{
+					"name":"tenHearts",
+					"details":null
+				},{
+					"name":"fourteenHearts",
+					"details":null
+				}
+			]
+		},
+		{
+			"name":"Lewis",
+			"canMarry": false,
+			"photo":"https://stardewvalleywiki.com/mediawiki/images/2/2b/Lewis.png",
+			"events":[
+				{
+					"name":"oneHeart",
+					"details":null
+				},{
+					"name":"twoHearts",
+					"details": null
+				},{
+					"name":"threeHearts",
+					"details":"After reaching 3 hearts with Lewis, he will send you a recipe in the mail."
+				},{
+					"name":"fourHearts",
+					"details":null
+				},{
+					"name":"fiveHearts",
+					"details":null
+				},{
+					"name":"sixHearts",
+					"details":"On a sunny day, enter the town between 7pm and 11pm.<br>Note: Only happens if Marnie is also at 6 hearts."
+				},{
+					"name":"sevenHearts",
+					"details":"After reaching 7 hearts with Lewis, he will send you a recipe in the mail."
+				},{
+					"name":"eightHearts",
+					"details":null
+				},{
+					"name":"nineHearts",
+					"details":null
+				},{
+					"name":"tenHearts",
+					"details":null
+				},{
+					"name":"fourteenHearts",
+					"details":null
+				}
+			]
+		},
+		{
+			"name":"Linus",
+			"canMarry": false,
+			"photo":"https://stardewvalleywiki.com/mediawiki/images/3/31/Linus.png",
+			"events":[
+				{
+					"name":"oneHeart",
+					"details":"After you have 50 Friendship points with Linus, enter the town between 8pm - 12am on a day that's not raining. (This event cannot trigger before Spring 7, Year 1)"
+				},{
+					"name":"twoHearts",
+					"details": null
+				},{
+					"name":"threeHearts",
+					"details":"After reaching 3 hearts with Linus he will send you a recipe in the mail."
+				},{
+					"name":"fourHearts",
+					"details":"Enter the mountain area near his tent between 8pm - 12am on a day that's not raining."
+				},{
+					"name":"fiveHearts",
+					"details":null
+				},{
+					"name":"sixHearts",
+					"details":null
+				},{
+					"name":"sevenHearts",
+					"details":"After reaching seven hearts with Linus, he will send you a recipe in the mail."
+				},{
+					"name":"eightHearts",
+					"details":"Exit Robin's house on a day that's not raining between 9am and 5pm."
+				},{
+					"name":"nineHearts",
+					"details":null
+				},{
+					"name":"tenHearts",
+					"details":null
+				},{
+					"name":"fourteenHearts",
+					"details":null
+				}
+			]
+		},
+		{
+			"name":"Marnie",
+			"canMarry": false,
+			"photo":"https://stardewvalleywiki.com/mediawiki/images/5/52/Marnie.png",
+			"events":[
+				{
+					"name":"oneHeart",
+					"details":null
+				},{
+					"name":"twoHearts",
+					"details": null
+				},{
+					"name":"threeHearts",
+					"details":"Leave your farmhouse between 6:30am - 9:30am.<br>Also, after reaching 3 hearts, Marnie sends you a recipe in the mail."
+				},{
+					"name":"fourHearts",
+					"details":null
+				},{
+					"name":"fiveHearts",
+					"details":null
+				},{
+					"name":"sixHearts",
+					"details":"On a sunny day, enter the town between 7pm and 11pm.<br>Note: Only happens if Lewis is also at 6 hearts."
+				},{
+					"name":"sevenHearts",
+					"details":"After reaching 7 hearts, Marnie sends you a recipe in the mail."
+				},{
+					"name":"eightHearts",
+					"details":null
+				},{
+					"name":"nineHearts",
+					"details":null
+				},{
+					"name":"tenHearts",
+					"details":null
+				},{
+					"name":"fourteenHearts",
+					"details":null
+				}
+			]
+		},
+		{
+			"name":"Pam",
+			"canMarry": false,
+			"photo":"https://stardewvalleywiki.com/mediawiki/images/d/da/Pam.png",
+			"events":[
+				{
+					"name":"oneHeart",
+					"details":null
+				},{
+					"name":"twoHearts",
+					"details": null
+				},{
+					"name":"threeHearts",
+					"details":"After reaching 3 hearts with Pam she will send you a recipe in the mail."
+				},{
+					"name":"fourHearts",
+					"details":null
+				},{
+					"name":"fiveHearts",
+					"details":null
+				},{
+					"name":"sixHearts",
+					"details":null
+				},{
+					"name":"sevenHearts",
+					"details":"After reaching 7 hearts with Pam she will send you a recipe in the mail."
+				},{
+					"name":"eightHearts",
+					"details":null
+				},{
+					"name":"nineHearts",
+					"details":"Purchase the &quot;Community Upgrade&quot; from the Carpenter's Shop. After earning 9 hearts of friendship with Pam, enter Pam's house at least 4 days after the Community Upgrade is completed."
+				},{
+					"name":"tenHearts",
+					"details":null
+				},{
+					"name":"fourteenHearts",
+					"details":null
+				}
+			]
+		},
+		{
+			"name":"Pierre",
+			"canMarry": false,
+			"photo":"https://stardewvalleywiki.com/mediawiki/images/7/7e/Pierre.png",
+			"events":[
+				{
+					"name":"oneHeart",
+					"details":null
+				},{
+					"name":"twoHearts",
+					"details": null
+				},{
+					"name":"threeHearts",
+					"details":"After reaching 3 hearts with Pierre he will send you a recipe in the mail."
+				},{
+					"name":"fourHearts",
+					"details":null
+				},{
+					"name":"fiveHearts",
+					"details":null
+				},{
+					"name":"sixHearts",
+					"details":"Enter Pierre's Shop."
+				},{
+					"name":"sevenHearts",
+					"details":null
+				},{
+					"name":"eightHearts",
+					"details":null
+				},{
+					"name":"nineHearts",
+					"details":null
+				},{
+					"name":"tenHearts",
+					"details":null
+				},{
+					"name":"fourteenHearts",
+					"details":null
+				}
+			]
+		},
+		{
+			"name":"Robin",
+			"canMarry": false,
+			"photo":"https://stardewvalleywiki.com/mediawiki/images/1/1b/Robin.png",
+			"events":[
+				{
+					"name":"oneHeart",
+					"details":null
+				},{
+					"name":"twoHearts",
+					"details": null
+				},{
+					"name":"threeHearts",
+					"details":null
+				},{
+					"name":"fourHearts",
+					"details":null
+				},{
+					"name":"fiveHearts",
+					"details":null
+				},{
+					"name":"sixHearts",
+					"details":"Enter Robin's house while she is home."
+				},{
+					"name":"sevenHearts",
+					"details":"After reaching 7 hearts with Robin she will send you a recipe in the mail."
+				},{
+					"name":"eightHearts",
+					"details":null
+				},{
+					"name":"nineHearts",
+					"details":null
+				},{
+					"name":"tenHearts",
+					"details":null
+				},{
+					"name":"fourteenHearts",
+					"details":null
+				}
+			]
+		},
+		{
+			"name":"Sandy",
+			"canMarry": false,
+			"photo":"https://stardewvalleywiki.com/mediawiki/images/4/4e/Sandy.png",
+			"events":[
+				{
+					"name":"oneHeart",
+					"details":null
+				},{
+					"name":"twoHearts",
+					"details": null
+				},{
+					"name":"threeHearts",
+					"details":null
+				},{
+					"name":"fourHearts",
+					"details":null
+				},{
+					"name":"fiveHearts",
+					"details":null
+				},{
+					"name":"sixHearts",
+					"details":null
+				},{
+					"name":"sevenHearts",
+					"details":"After reaching seven hearts with Sandy, she will send you a recipe in the mail."
+				},{
+					"name":"eightHearts",
+					"details":null
+				},{
+					"name":"nineHearts",
+					"details":null
+				},{
+					"name":"tenHearts",
+					"details":null
+				},{
+					"name":"fourteenHearts",
+					"details":null
+				}
+			]
+		},
+		{
+			"name":"Vincent",
+			"canMarry": false,
+			"photo":"https://stardewvalleywiki.com/mediawiki/images/f/f1/Vincent.png",
+			"events":[
+				{
+					"name":"oneHeart",
+					"details":null
+				},{
+					"name":"twoHearts",
+					"details": null
+				},{
+					"name":"threeHearts",
+					"details":null
+				},{
+					"name":"fourHearts",
+					"details":null
+				},{
+					"name":"fiveHearts",
+					"details":null
+				},{
+					"name":"sixHearts",
+					"details":null
+				},{
+					"name":"sevenHearts",
+					"details":null
+				},{
+					"name":"eightHearts",
+					"details":"After reaching 8 hearts with both Vincent and Jas, enter Cindersap Forest during Spring on a sunny day between 6am and 5pm."
+				},{
+					"name":"nineHearts",
+					"details":null
+				},{
+					"name":"tenHearts",
+					"details":null
+				},{
+					"name":"fourteenHearts",
+					"details":null
+				}
+			]
+		},
+		{
+			"name":"Willy",
+			"canMarry": false,
+			"photo":"https://stardewvalleywiki.com/mediawiki/images/8/82/Willy.png",
+			"events":[
+				{
+					"name":"oneHeart",
+					"details":null
+				},{
+					"name":"twoHearts",
+					"details": null
+				},{
+					"name":"threeHearts",
+					"details":"After reaching three hearts with Willy he will send you a recipe in the mail."
+				},{
+					"name":"fourHearts",
+					"details":null
+				},{
+					"name":"fiveHearts",
+					"details":"After reaching five hearts with Willy he will send you a recipe in the mail."
+				},{
+					"name":"sixHearts",
+					"details":"Enter The Beach between 6am and 5:10pm."
+				},{
+					"name":"sevenHearts",
+					"details":"After reaching seven hearts with Willy he will send you a recipe in the mail."
+				},{
+					"name":"eightHearts",
+					"details":null
+				},{
+					"name":"nineHearts",
+					"details":"After reaching nine hearts with Willy he will send you a recipe in the mail."
+				},{
+					"name":"tenHearts",
+					"details":null
+				},{
+					"name":"fourteenHearts",
+					"details":null
+				}
+			]
+		},
+		{
+			"name":"M. Rasmodius",
+			"canMarry": false,
+			"photo":"NULL",
+			"events":[
+				{
+					"name":"oneHeart",
+					"details":null
+				},{
+					"name":"twoHearts",
+					"details": null
+				},{
+					"name":"threeHearts",
+					"details":null
+				},{
+					"name":"fourHearts",
+					"details":"Players gain access to the basement of the Wizard's Tower, where they can change their character's appearance at The Shrine of Illusions for 500g."
+				},{
+					"name":"fiveHearts",
+					"details":null
+				},{
+					"name":"sixHearts",
+					"details":null
+				},{
+					"name":"sevenHearts",
+					"details":null
+				},{
+					"name":"eightHearts",
+					"details":null
 				},{
 					"name":"nineHearts",
 					"details":null
