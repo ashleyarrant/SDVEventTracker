@@ -31,7 +31,6 @@ function loadSeen(eventName, name){
 		$("#box-" + checkbox).removeClass("bg-warning");
 		return "checked";
 	} else {
-		console.log("NO");
 		$("#box-" + checkbox).addClass("bg-warning");
 		return "";
 	}
@@ -96,8 +95,6 @@ function sortRows(){
 
 			let x = parseInt($("#currently-"+a).attr("data-value"));
 			let y = parseInt($("#currently-"+b).attr("data-value"));
-
-			console.log("x: "+x+" / y: "+y);
 			
 			if(x < y) {
 				shouldSwitch = true;
