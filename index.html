@@ -207,8 +207,8 @@
 			//for each row
 			for(let i=0;i<rows;i++){
 				//populate currently
-				let val = parseInt($("tbody tr:nth-child("+(i)+") [id^='currently']").attr("data-value"));
-				let name = $("tbody tr:nth-child("+(i)+") [id^='currently']").attr("id").replace("currently-","");
+				let val = parseInt($("tbody tr:nth-child("+(i+1)+") [id^='currently']").attr("data-value"));
+				let name = $("tbody tr:nth-child("+(i+1)+") [id^='currently']").attr("id").replace("currently-","");
 				
 				switch(val){
 					case 1: one(name); break;
