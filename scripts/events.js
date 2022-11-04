@@ -79,3 +79,32 @@ function colorCode(name) {
 		}
 	});
 }
+
+function sortRows(){
+	var table, rows, switching, shouldSwitch, i, a, b, x, y;
+	table = $("table");
+	switching = true;
+	while(switching){
+		switching = false;
+		rows = table.rows;
+		for(i=0;i<rows.length;i++){
+			shouldSwitch = false;
+			a = rows[i].getElementsByTagName("input")[0];
+			b = rows[i+1].getElementsByTagName("input")[0];
+
+			x = a.attr("id").split("-")[1];
+			y = b.attr("id").split("-")[1];
+			if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+				//if so, mark as a switch and break the loop:
+				shouldSwitch = true;
+				break;
+			  }
+		}
+		if (shouldSwitch) {
+		  /*If a switch has been marked, make the switch
+		  and mark that a switch has been done:*/
+		  rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+		  switching = true;
+		}
+	}
+}

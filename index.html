@@ -169,6 +169,8 @@
 	<script>
 	$(document).ready(function(){
 
+		sortRows();
+
 		Handlebars.registerHelper('checkHearts', function (x) {
 			let name = x + "Hearts";
 			let val = getCookie(name);
