@@ -81,30 +81,32 @@ function colorCode(name) {
 }
 
 function sortRows(){
-	var table, rows, switching, shouldSwitch, i, a, b, x, y;
-	table = $("table");
-	switching = true;
-	while(switching){
-		switching = false;
-		rows = table.rows;
-		for(i=0;i<rows.length;i++){
+	var hasSwitched = true;
+	var shouldSwitch = false
+	var i;
+	while(hasSwitched) {
+		hasSwitched = false;
+		let rows = $("tbody tr");
+		for(i = 0; i<(rows.length - 1); i++){
 			shouldSwitch = false;
-			a = rows[i].getElementsByTagName("input")[0];
-			b = rows[i+1].getElementsByTagName("input")[0];
 
-			x = a.attr("id").split("-")[1];
-			y = b.attr("id").split("-")[1];
-			if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-				//if so, mark as a switch and break the loop:
+			//values to compare
+			let a = rows[i].getAttribute("id").replace("row-","");
+			let b = rows[i+1].getAttribute("id").replace("row-","");
+
+			let x = parseInt($("#currently-"+a).attr("data-value"));
+			let y = parseInt($("#currently-"+b).attr("data-value"));
+
+			console.log("x: "+x+" / y: "+y);
+			
+			if(x < y) {
 				shouldSwitch = true;
 				break;
-			  }
+			}
 		}
-		if (shouldSwitch) {
-		  /*If a switch has been marked, make the switch
-		  and mark that a switch has been done:*/
-		  rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-		  switching = true;
+		if(shouldSwitch){
+			rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+			hasSwitched = true;
 		}
 	}
 }
